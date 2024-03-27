@@ -1233,7 +1233,7 @@ section.search .search-result {
   text-decoration: none;
 }
 .firstbar .brand img {
-  width: 200px;
+  width: 50%;
   display: block;
   float: left;
 }
