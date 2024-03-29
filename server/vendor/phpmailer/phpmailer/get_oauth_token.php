@@ -50,6 +50,9 @@ if (!isset($_GET['code']) && !isset($_GET['provider'])) {
 <a href='?provider=Google'>Google</a><br/>
 <a href='?provider=Yahoo'>Yahoo</a><br/>
 <a href='?provider=Microsoft'>Microsoft/Outlook/Hotmail/Live/Office365</a><br/>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/21771695.js"></script>
+<!-- End of HubSpot Embed Code -->
 </body>
 </html>
 <?php
