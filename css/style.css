@@ -3085,14 +3085,15 @@ footer.footer .footer-nav li a:hover {
   color: #F73F52;
 }
 footer.footer .foot-logo {
-  width: 140px;
-  margin-bottom: 20px;
+  width: 100%;
+  padding: 0 20px;
 }
 footer.footer .foot-logo img {
   width: 100%;
 }
 footer.footer .brand-description {
   line-height: 24px;
+  text-align: center;
 }
 footer.footer .newsletter {
   background-color: transparent;
