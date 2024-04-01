@@ -397,7 +397,7 @@ section {
   padding-top: 20px;
   padding-bottom: 40px;
   &.first {
-    padding-top: 240px;
+    padding-top: 240px !important;
     transition: $general-transition;
     -webkit-transition: $general-transition;
     -o-transition: $general-transition;

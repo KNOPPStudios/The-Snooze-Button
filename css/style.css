@@ -574,7 +574,7 @@ section {
   padding-bottom: 40px;
 }
 section.first {
-  padding-top: 240px;
+  padding-top: 240px !important;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;

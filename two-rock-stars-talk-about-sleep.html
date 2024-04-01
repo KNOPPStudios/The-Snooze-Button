@@ -53,108 +53,7 @@
 			</div>
 
 			<!-- Start nav -->
-			<nav class="menu">
-				<div class="container">
-					<div class="brand">
-						<a href="#">
-							<img src="images/the_snooze_button_logo_780_117.webp" alt="The Snooze Button logo">
-						</a>
-					</div>
-					<div class="mobile-toggle">
-						<a href="#" data-toggle="menu" data-target="#menu-list"><i class="ion-navicon-round"></i></a>
-					</div>
-					<div class="mobile-toggle">
-						<a href="#" data-toggle="sidebar" data-target="#sidebar"><i class="ion-ios-arrow-left"></i></a>
-					</div>
-					<div id="menu-list">
-						<ul class="nav-list">
-							<li class="for-tablet nav-title"><a>Menu</a></li>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="podcast.html">Podcast</a></li>
-                            <li><a href="ask-our-sleep-experts.html">Ask Our Sleep Experts</a></li>
-                            <li><a href="reviews-feedback-support.html">Reviews, Feedback & Support</a></li>
-							<li class="dropdown magz-dropdown magz-dropdown-megamenu"><a href="#">Editor's Picks <i class="ion-ios-arrow-right"></i> <div class="badge">Hot</div></a>
-								<div class="dropdown-menu megamenu">
-									<div class="megamenu-inner">
-										<div class="row">
-											<div class="col-md-3">
-												<div class="row">
-													<div class="col-md-12">
-														<h2 class="megamenu-title">Videos</h2>
-													</div>
-												</div>
-												<ul class="vertical-menu">
-													<li><a href="abc-diane-macedo-author-the-sleep-fix.html"><i class="ion-ios-circle-outline"></i> ABC's Diane Macedo</a></li>
-													<li><a href="erin-davis-drift-sleepy-side-pillow.html"><i class="ion-ios-circle-outline"></i> Erin Davis</a></li>
-													<li><a href="#"><i class="ion-ios-circle-outline"></i> Chillina Kennedy</a></li>
-													<li><a href="congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html"><i class="ion-ios-circle-outline"></i> Rep. Stacey Plaskett</a></li>
-												</ul>
-											</div>
-                                            <div class="col-md-9">
-												<div class="row">
-													<div class="col-md-12">
-														<h2 class="megamenu-title">Recent Posts</h2>
-													</div>
-												</div>
-												<div class="row">
-													<article class="article col-md-4 mini">
-														<div class="inner">
-															<figure>
-																<a href="sex-and-sleep-was-it-good-for-you.html">
-																	<img src="images/featured/snooze_button_podcast_sex_sleep_was_it_good_for_you.webp" alt="Sex and Sleep: Was It Good For You?">
-																</a>
-															</figure>
-															<div class="padding">
-																<div class="detail">
-																	<div class="time">July 5, 2023</div>
-																	<div class="category"><a href="podcast.html">Podcast</a></div>
-																</div>
-																<h2><a href="sex-and-sleep-was-it-good-for-you.html">Sex and Sleep: Was It Good For You?</a></h2>
-															</div>
-														</div>
-													</article>
-													<article class="article col-md-4 mini">
-														<div class="inner">
-															<figure>
-																<a href="abc-diane-macedo-author-the-sleep-fix.html">
-																	<img src="images/featured/snooze-button-podcast-abc-diane-macedo-author-the-sleep-fix.webp" alt="ABC's Diane Macedo, Author of 'The Sleep Fix'">
-																</a>
-															</figure>
-															<div class="padding">
-																<div class="detail">
-																	<div class="time">December 15, 2021</div>
-																	<div class="category"><a href="podcast.html">Podcast</a></div>
-																</div>
-																<h2><a href="abc-diane-macedo-author-the-sleep-fix.html">ABC's Diane Macedo, Author of 'The Sleep Fix'</a></h2>
-															</div>
-														</div>
-													</article>
-													<article class="article col-md-4 mini">
-														<div class="inner">
-															<figure>
-																<a href="who-tracks-sleep-trackers-jesse-cook.html">
-																	<img src="images/featured/snooze_button_podcast_sleep_trackers_jesse_cook.webp" alt="Who Tracks The Sleep Trackers? Meet Jesse Cook">
-																</a>
-															</figure>
-															<div class="padding">
-																<div class="detail">
-																	<div class="time">December 7, 2021</div>
-																	<div class="category"><a href="podcast.html">Podcast</a></div>
-																</div>
-																<h2><a href="who-tracks-sleep-trackers-jesse-cook.html">Who Tracks The Sleep Trackers? Meet Jesse Cook</a></h2>
-															</div>
-														</div>
-													</article>
-												</div>
-											</div>
-										</div>								
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
+			<div id="snoozeNav"></div>
 			<!-- End nav -->
 		</header>
 
@@ -307,13 +206,16 @@
 		<script src="js/jquery.js"></script>
 		<script>
 			$(function(){
+			$("#snoozeNav").load("main-nav.html");
+			});
+			$(function(){
 			$("#snoozeSidebar").load("sidebarContent.html");
 			});
 			$(function(){
 			$("#snoozeFooter").load("footerContent.html");
 			});
-			</script>
-					<script src="js/jquery.migrate.js"></script>
+		</script>
+		<script src="js/jquery.migrate.js"></script>
 		<script src="scripts/bootstrap/bootstrap.min.js"></script>
 		<script>var $target_end=$(".best-of-the-week");</script>
 		<script src="scripts/jquery-number/jquery.number.min.js"></script>
