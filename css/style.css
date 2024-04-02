@@ -472,6 +472,7 @@ a.twitch {
 
 .pagination {
   margin-bottom: 10px;
+  text-align: center;
 }
 .pagination li a {
   color: #333;
@@ -4133,4 +4134,58 @@ blockquote {
   z-index: 2001;
 }
 
+/* Pagination CSS */
+
+.card-container { 
+  display: block; 
+/*  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+  */
+} 
+
+.card { 
+  display: flex;
+  border: 1px solid #ddd; 
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 20px 0px rgba(0, 0, 0, 0.1); 
+  background-color: #fff; 
+  text-align: center; 
+} 
+
+.card img { 
+  max-width: 100%; 
+  height: auto; 
+  margin-bottom: 10px; 
+  border-radius: 10px; 
+} 
+
+.newPagination { 
+  text-align: center; 
+  margin-top: 2rem; 
+} 
+
+.newPagination a { 
+  color: #007BFF; 
+  padding: 8px 16px; 
+  text-decoration: none; 
+  border: 1px solid #007BFF; 
+  margin: 0 5px; 
+  border-radius: 4px; 
+} 
+
+.newPagination a:hover { 
+  background-color: #007BFF; 
+  color: white; 
+} 
+
+.newPagination .active { 
+  background-color: #007BFF; 
+  color: white; 
+} 
+
+#page-numbers { 
+  margin-top: 20px; 
+  font-size: 16px; 
+}
 /*# sourceMappingURL=style.css.map */
