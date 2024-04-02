@@ -1,6 +1,49 @@
 <!DOCTYPE html>
 <html>
 	<head>
+<script>
+
+// Define dataLayer and the gtag function.
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+ 
+// Set default consent for specific regions according to your requirements
+
+gtag('consent', 'default', {
+
+  'ad_storage': 'denied',
+
+  'ad_user_data': 'denied',
+
+  'ad_personalization': 'denied',
+
+  'analytics_storage': 'denied',
+
+ 'regions':[<list of ISO 3166-2 region codes>]
+
+});
+
+// Set default consent for all other regions according to your requirements
+
+gtag('consent', 'default', {
+
+  'ad_storage': 'denied',
+
+  'ad_user_data': 'denied',
+
+  'ad_personalization': 'denied',
+
+  'analytics_storage': 'denied'
+
+});
+
+ 
+</script>
+<script type="text/javascript" src="https://cache.consentframework.com/js/pa/39829/c/CpI3s/stub"></script>
+<script type="text/javascript" src="https://choices.consentframework.com/js/pa/39829/c/CpI3s/cmp" async></script>
 <script async type="text/javascript" src="//clickiocmp.com/t/consent_235523.js"></script>
 
 <!-- Google tag (gtag.js) -->
@@ -221,6 +264,6 @@
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0&appId=2272336522789699" nonce="sLRLetfM"></script>
 <!-- End of Facebook Comments plugin -->
-<script defer data-cfasync='false' src='https://s.clickiocdn.com/t/235523_wv.js'></script>
+
 </body>
 </html>

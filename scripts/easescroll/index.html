@@ -1,6 +1,47 @@
 <!doctype html>
 <html>
 <head>
+<script>
+
+// Define dataLayer and the gtag function.
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+ 
+// Set default consent for specific regions according to your requirements
+
+gtag('consent', 'default', {
+
+  'ad_storage': 'denied',
+
+  'ad_user_data': 'denied',
+
+  'ad_personalization': 'denied',
+
+  'analytics_storage': 'denied',
+
+ 'regions':[<list of ISO 3166-2 region codes>]
+
+});
+
+// Set default consent for all other regions according to your requirements
+
+gtag('consent', 'default', {
+
+  'ad_storage': 'denied',
+
+  'ad_user_data': 'denied',
+
+  'ad_personalization': 'denied',
+
+  'analytics_storage': 'denied'
+
+});
+
+ 
+</script>
 <script type="text/javascript" src="https://cache.consentframework.com/js/pa/39829/c/CpI3s/stub"></script>
 <script type="text/javascript" src="https://choices.consentframework.com/js/pa/39829/c/CpI3s/cmp" async></script>
 <!-- Google tag (gtag.js) -->
@@ -75,6 +116,6 @@ $("html").easeScroll();
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/21771695.js"></script>
 <!-- End of HubSpot Embed Code -->
 
-<script defer data-cfasync='false' src='https://s.clickiocdn.com/t/235523_wv.js'></script>
+
 </body>
 </html>
