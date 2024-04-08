@@ -9,9 +9,18 @@ fetch('tagIndex.json')
 // Get the input element
 let input = document.getElementById('search-input');
 
+// Get the results element
+let resultsElement = document.getElementById('search-results'); // Replace 'results' with the id of your results element
+
 // Add event listener to the input field
 input.addEventListener('keyup', function(event) {
     let value = event.target.value.toLowerCase(); // Convert the input to lowercase
+    // If the search box is empty, clear the results and return
+    if (value === '') {
+        resultsElement.innerHTML = '';
+        return;
+    }
+
     console.log('Input value:', value); // Debug line
   let results = [];
 
@@ -48,12 +57,18 @@ function updateSearchResults(results) {
         
         link.href = result.file;
         link.textContent = result.title;
-        
+        link.style.flexGrow = '1'; // Allow the link to take up the remaining space
+        link.style.marginLeft = '1em'; // Add some space to the left of the link
+            
         img.src = result.thumbnail;
         img.style.width = '100%'; // Set the width of the image to 100%
         img.style.height = 'auto'; // Let the height adjust automatically
         img.style.marginRight = '1em'; // Add some space to the right of the image
 
+        li.style.display = 'flex'; // Make the list item display as a flex container
+        li.style.alignItems = 'flex-start'; // Align items to the start of the container
+        li.style.marginBottom = '1em'; // Add some space below each list item
+        
         li.appendChild(img);
         li.appendChild(link);
         resultsElement.appendChild(li);

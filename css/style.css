@@ -4203,7 +4203,8 @@ blockquote {
 
 /* Style the list items */
 .search-display li {
-  margin-bottom: 1em; /* Add some space below each item */
+  display: flex; /* Make the list items display as flex containers */
+  align-items: flex-start; /* Align items to the start of the container */
 }
 
 /* Style the images */
@@ -4212,4 +4213,10 @@ blockquote {
   max-width: 80px; /* Don't get too big */
   height: auto; /* Maintain aspect ratio */
   margin-right: 1em;
+}
+
+/* Style the links */
+.search-display a {
+  flex-grow: 1; /* Allow the links to take up the remaining space */
+  margin-left: 1em; /* Add some space to the left of the links */
 }
