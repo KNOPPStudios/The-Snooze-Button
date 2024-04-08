@@ -4189,3 +4189,27 @@ blockquote {
   font-size: 16px; 
 }
 /*# sourceMappingURL=style.css.map */
+
+/* Set the default width of the search area */
+.search-container {
+  width: 100%; /* Take up the full width of its container */
+}
+
+/* Style the search results */
+.search-display {
+  list-style-type: none; /* Remove the default list style */
+  padding: 0; /* Remove the default padding */
+}
+
+/* Style the list items */
+.search-display li {
+  margin-bottom: 1em; /* Add some space below each item */
+}
+
+/* Style the images */
+.search-display img {
+  width: 100%; /* Take up the full width of their container */
+  max-width: 80px; /* Don't get too big */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 1em;
+}
