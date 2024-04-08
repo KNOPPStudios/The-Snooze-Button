@@ -198,6 +198,16 @@
       "title": "Going To Bed With Sleep Radio"
     },
     {
+      "file": "index.html",
+      "thumbnail": "https://thesnoozebutton.com/images/snooze_button_podcast_twitter_avatar.webp",
+      "title": "Fix your broken sleep with Neil Hedley"
+    },
+    {
+      "file": "index.html",
+      "thumbnail": "https://thesnoozebutton.com/images/snooze_button_podcast_twitter_avatar.webp",
+      "title": "Fix your broken sleep with Neil Hedley"
+    },
+    {
       "file": "lets-play-ball-how-sleep-affects-the-national-pastime.html",
       "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-lawrence-gowan-styx-sleep-tour-bus.webp",
       "title": "Let's Play Ball! How Sleep Affects the National Pastime"
@@ -533,6 +543,11 @@
       "file": "going-to-bed-with-sleep-radio.html",
       "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-going-to-bed-with-sleep-radio.webp",
       "title": "Going To Bed With Sleep Radio"
+    },
+    {
+      "file": "index.html",
+      "thumbnail": "https://thesnoozebutton.com/images/snooze_button_podcast_twitter_avatar.webp",
+      "title": "Fix your broken sleep with Neil Hedley"
     },
     {
       "file": "please-dont-make-us-call-it-sleep-divorce.html",
@@ -887,6 +902,11 @@
       "file": "going-to-bed-with-sleep-radio.html",
       "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-going-to-bed-with-sleep-radio.webp",
       "title": "Going To Bed With Sleep Radio"
+    },
+    {
+      "file": "index.html",
+      "thumbnail": "https://thesnoozebutton.com/images/snooze_button_podcast_twitter_avatar.webp",
+      "title": "Fix your broken sleep with Neil Hedley"
     },
     {
       "file": "lets-play-ball-how-sleep-affects-the-national-pastime.html",
@@ -1266,6 +1286,11 @@
       "file": "dr-guy-leschziner-and-the-nocturnal-brain.html",
       "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-dr-guy-leschziner-and-the-nocturnal-brain.webp",
       "title": "Dr. Guy Leschziner and 'The Nocturnal Brain'"
+    },
+    {
+      "file": "index.html",
+      "thumbnail": "https://thesnoozebutton.com/images/snooze_button_podcast_twitter_avatar.webp",
+      "title": "Fix your broken sleep with Neil Hedley"
     }
   ],
   "trackers": [
@@ -1644,6 +1669,11 @@
       "file": "dr-guy-leschziner-and-the-nocturnal-brain.html",
       "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-dr-guy-leschziner-and-the-nocturnal-brain.webp",
       "title": "Dr. Guy Leschziner and 'The Nocturnal Brain'"
+    },
+    {
+      "file": "index.html",
+      "thumbnail": "https://thesnoozebutton.com/images/snooze_button_podcast_twitter_avatar.webp",
+      "title": "Fix your broken sleep with Neil Hedley"
     }
   ],
   "the": [
@@ -1811,6 +1841,11 @@
       "file": "erin-davis-drift-sleepy-side-pillow.html",
       "thumbnail": "https://thesnoozebutton.com/images/featured/snooze_button_podcast_erin_davis_drift.webp",
       "title": "Erin Davis And Drift: The Sleepy Side Of The Pillow"
+    },
+    {
+      "file": "index.html",
+      "thumbnail": "https://thesnoozebutton.com/images/snooze_button_podcast_twitter_avatar.webp",
+      "title": "Fix your broken sleep with Neil Hedley"
     },
     {
       "file": "two-rock-stars-talk-about-sleep.html",
@@ -2138,12 +2173,19 @@
       "title": "Songs About Sleep: The 15 Best of All Time"
     }
   ],
-  "magz": [
+  "research": [
     {
       "file": "index.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+      "thumbnail": "https://thesnoozebutton.com/images/snooze_button_podcast_twitter_avatar.webp",
+      "title": "Fix your broken sleep with Neil Hedley"
     },
+    {
+      "file": "the-only-thing-your-wearable-sleep-tracker-is-good-for.html",
+      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-the-only-thing-your-wearable-sleep-tracker-is-good-for.webp",
+      "title": "The Only Thing Your Wearable Sleep Tracker Is Good For With Dr. Michael Chee"
+    }
+  ],
+  "magz": [
     {
       "file": "indexOrig.html",
       "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
@@ -2155,22 +2197,7 @@
       "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
     },
     {
-      "file": "login.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
       "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "register.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "reset.html",
       "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
       "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
     },
@@ -2197,11 +2224,6 @@
   ],
   "html5": [
     {
-      "file": "index.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
       "file": "indexOrig.html",
       "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
       "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
@@ -2212,22 +2234,7 @@
       "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
     },
     {
-      "file": "login.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
       "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "register.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "reset.html",
       "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
       "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
     },
@@ -2254,11 +2261,6 @@
   ],
   "css3": [
     {
-      "file": "index.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
       "file": "indexOrig.html",
       "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
       "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
@@ -2269,22 +2271,7 @@
       "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
     },
     {
-      "file": "login.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
       "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "register.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "reset.html",
       "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
       "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
     },
@@ -2311,16 +2298,6 @@
   ],
   "template": [
     {
-      "file": "index.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "index.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
       "file": "indexOrig.html",
       "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
       "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
@@ -2341,42 +2318,12 @@
       "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
     },
     {
-      "file": "login.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "login.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
       "file": "privacy_policy.html",
       "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
       "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
     },
     {
       "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "register.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "register.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "reset.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "reset.html",
       "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
       "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
     },
@@ -2423,11 +2370,6 @@
   ],
   "magazine": [
     {
-      "file": "index.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
       "file": "indexOrig.html",
       "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
       "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
@@ -2438,22 +2380,7 @@
       "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
     },
     {
-      "file": "login.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
       "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "register.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "reset.html",
       "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
       "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
     },
@@ -3274,13 +3201,6 @@
     }
   ],
   "psg": [
-    {
-      "file": "the-only-thing-your-wearable-sleep-tracker-is-good-for.html",
-      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-the-only-thing-your-wearable-sleep-tracker-is-good-for.webp",
-      "title": "The Only Thing Your Wearable Sleep Tracker Is Good For With Dr. Michael Chee"
-    }
-  ],
-  "research": [
     {
       "file": "the-only-thing-your-wearable-sleep-tracker-is-good-for.html",
       "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-the-only-thing-your-wearable-sleep-tracker-is-good-for.webp",
