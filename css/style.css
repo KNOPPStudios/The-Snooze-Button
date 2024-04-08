@@ -4220,3 +4220,7 @@ blockquote {
   flex-grow: 1; /* Allow the links to take up the remaining space */
   margin-left: 1em; /* Add some space to the left of the links */
 }
+
+#search-input {
+  width: 100%;
+}

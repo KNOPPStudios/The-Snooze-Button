@@ -54,7 +54,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							</div>						
 						</div>
 						<div class="col-md-6 col-sm-12">
-							<!-- Placeholder for future search functionality -->						
+<!-- Search bar experiment begins here -->
+<div class="search-bar" style="margin: 20px 0">
+    <input 
+    id="search-input" 
+    type="search" 
+    placeholder="Start typing to search our library of tags..." 
+    autocomplete="off"
+    />
+</div>
+<div class="search-container">
+        <ul id="search-results" class="search-display"></ul>
+</div>
+<div class="posts-container"></div>
+<!-- Search bar experiment ends here -->							
 						</div>
 					</div>
 				</div>
@@ -424,6 +437,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<script src="scripts/toast/jquery.toast.min.js"></script>
 		<script src="js/demo.js"></script>
 		<script src="js/e-magz.js"></script>
+		<script src="scripts/search.js"></script>
+
 	<!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/21771695.js"></script>
 <!-- End of HubSpot Embed Code -->
