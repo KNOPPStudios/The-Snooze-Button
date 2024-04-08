@@ -51,11 +51,6 @@
 		<lastmod>2024-04-08</lastmod>
 	</url>
 	<url>
-		<loc>https://www.thesnoozebutton.com/starter.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-08</lastmod>
-	</url>
-	<url>
 		<loc>https://www.thesnoozebutton.com/songs-about-sleep-the-15-best-of-all-time.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-04-08</lastmod>
@@ -121,37 +116,12 @@
 		<lastmod>2024-04-08</lastmod>
 	</url>
 	<url>
-		<loc>https://www.thesnoozebutton.com/single.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-08</lastmod>
-	</url>
-	<url>
-		<loc>https://www.thesnoozebutton.com/single-podcast.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-08</lastmod>
-	</url>
-	<url>
-		<loc>https://www.thesnoozebutton.com/single-beditorial.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-08</lastmod>
-	</url>
-	<url>
-		<loc>https://www.thesnoozebutton.com/single-article.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-08</lastmod>
-	</url>
-	<url>
 		<loc>https://www.thesnoozebutton.com/sidebarContent.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-04-04</lastmod>
 	</url>
 	<url>
 		<loc>https://www.thesnoozebutton.com/sex-and-sleep-was-it-good-for-you.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-08</lastmod>
-	</url>
-	<url>
-		<loc>https://www.thesnoozebutton.com/search.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-04-08</lastmod>
 	</url>
@@ -181,11 +151,6 @@
 		<lastmod>2024-04-08</lastmod>
 	</url>
 	<url>
-		<loc>https://www.thesnoozebutton.com/page.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-08</lastmod>
-	</url>
-	<url>
 		<loc>https://www.thesnoozebutton.com/meditation-and-sleep-part-one.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-04-08</lastmod>
@@ -197,16 +162,6 @@
 	</url>
 	<url>
 		<loc>https://www.thesnoozebutton.com/lets-play-ball-how-sleep-affects-the-national-pastime.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-08</lastmod>
-	</url>
-	<url>
-		<loc>https://www.thesnoozebutton.com/indexTest.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-08</lastmod>
-	</url>
-	<url>
-		<loc>https://www.thesnoozebutton.com/indexOrig.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-04-08</lastmod>
 	</url>
@@ -246,11 +201,6 @@
 		<lastmod>2024-04-08</lastmod>
 	</url>
 	<url>
-		<loc>https://www.thesnoozebutton.com/documentation</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-08</lastmod>
-	</url>
-	<url>
 		<loc>https://www.thesnoozebutton.com/cry-it-out-the-conversation-mad-about-you-paul-reiser-helen-hunt.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-04-08</lastmod>
@@ -262,11 +212,6 @@
 	</url>
 	<url>
 		<loc>https://www.thesnoozebutton.com/chilina-kennedy-science-comfort.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-08</lastmod>
-	</url>
-	<url>
-		<loc>https://www.thesnoozebutton.com/category.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-04-08</lastmod>
 	</url>
@@ -289,30 +234,5 @@
 		<loc>https://www.thesnoozebutton.com/abc-diane-macedo-author-the-sleep-fix.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-04-08</lastmod>
-	</url>
-	<url>
-		<loc>https://www.thesnoozebutton.com/503.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-08</lastmod>
-	</url>
-	<url>
-		<loc>https://www.thesnoozebutton.com/500.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-08</lastmod>
-	</url>
-	<url>
-		<loc>https://www.thesnoozebutton.com/404.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-08</lastmod>
-	</url>
-	<url>
-		<loc>https://www.thesnoozebutton.com/403.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-08</lastmod>
-	</url>
-	<url>
-		<loc>https://www.thesnoozebutton.com/scripts/easescroll</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-04-02</lastmod>
 	</url>
 </urlset>
