@@ -108,6 +108,11 @@
       "title": "Chilina Kennedy and the Science of Comfort"
     },
     {
+      "file": "congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html",
+      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.webp",
+      "title": "Congresswoman Stacey Plaskett and her Surprising Sleep Routine"
+    },
+    {
       "file": "cry-it-out-the-conversation-mad-about-you-paul-reiser-helen-hunt.html",
       "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-cry-it-out-the-conversation-mad-about-you-paul-reiser-helen-hunt.webp",
       "title": "Paul Reiser And Helen Hunt Talk About The Sleep Training Episode Of 'Mad About You'"
@@ -498,6 +503,11 @@
       "file": "calculating-your-fitbit-sleep-score.html",
       "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-calculating-your-fitbit-sleep-score.webp",
       "title": "Calculating Your Fitbit 'Sleep Score'"
+    },
+    {
+      "file": "congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html",
+      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.webp",
+      "title": "Congresswoman Stacey Plaskett and her Surprising Sleep Routine"
     },
     {
       "file": "dr-guy-leschziner-and-the-nocturnal-brain.html",
@@ -1318,6 +1328,11 @@
       "title": "Chilina Kennedy and the Science of Comfort"
     },
     {
+      "file": "congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html",
+      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.webp",
+      "title": "Congresswoman Stacey Plaskett and her Surprising Sleep Routine"
+    },
+    {
       "file": "meditation-and-sleep-part-one.html",
       "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-meditation-and-sleep-part-one.webp",
       "title": "Meditation and Sleep - Part One"
@@ -1345,6 +1360,11 @@
       "title": "Chilina Kennedy and the Science of Comfort"
     },
     {
+      "file": "congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html",
+      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.webp",
+      "title": "Congresswoman Stacey Plaskett and her Surprising Sleep Routine"
+    },
+    {
       "file": "sleep-and-athletic-performance-with-dr-michael-grandner.html",
       "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-sleep-and-athletic-performance-with-dr-michael-grandner.webp",
       "title": "Sleep and Athletic Performance with Dr. Michael Grandner"
@@ -1367,6 +1387,11 @@
       "title": "Chilina Kennedy and the Science of Comfort"
     },
     {
+      "file": "congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html",
+      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.webp",
+      "title": "Congresswoman Stacey Plaskett and her Surprising Sleep Routine"
+    },
+    {
       "file": "sleep-and-athletic-performance-with-dr-michael-grandner.html",
       "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-sleep-and-athletic-performance-with-dr-michael-grandner.webp",
       "title": "Sleep and Athletic Performance with Dr. Michael Grandner"
@@ -1384,434 +1409,63 @@
       "title": "Chilina Kennedy and the Science of Comfort"
     }
   ],
-  "magz": [
+  "politics": [
     {
       "file": "congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "contact.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "forgot.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "index.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexOrig.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexTest.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "login.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "register.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "reset.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "search.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "starter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "terms_conditions.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.webp",
+      "title": "Congresswoman Stacey Plaskett and her Surprising Sleep Routine"
     }
   ],
-  "html5": [
+  "congress": [
     {
       "file": "congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "contact.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "forgot.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "index.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexOrig.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexTest.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "login.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "register.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "reset.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "search.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "starter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "terms_conditions.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.webp",
+      "title": "Congresswoman Stacey Plaskett and her Surprising Sleep Routine"
     }
   ],
-  "css3": [
+  "stacey": [
     {
       "file": "congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "contact.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "forgot.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "index.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexOrig.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexTest.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "login.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "register.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "reset.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "search.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "starter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "terms_conditions.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.webp",
+      "title": "Congresswoman Stacey Plaskett and her Surprising Sleep Routine"
     }
   ],
-  "template": [
+  "plaskett": [
     {
       "file": "congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "contact.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "contact.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "forgot.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "forgot.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "index.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "index.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexOrig.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexOrig.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexTest.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexTest.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "login.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "login.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "register.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "register.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "reset.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "reset.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "search.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "search.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "starter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "starter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "terms_conditions.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "terms_conditions.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.webp",
+      "title": "Congresswoman Stacey Plaskett and her Surprising Sleep Routine"
     }
   ],
-  "magazine": [
+  "virgin": [
     {
       "file": "congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.webp",
+      "title": "Congresswoman Stacey Plaskett and her Surprising Sleep Routine"
+    }
+  ],
+  "islands": [
+    {
+      "file": "congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html",
+      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.webp",
+      "title": "Congresswoman Stacey Plaskett and her Surprising Sleep Routine"
+    }
+  ],
+  "sex": [
+    {
+      "file": "congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html",
+      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.webp",
+      "title": "Congresswoman Stacey Plaskett and her Surprising Sleep Routine"
     },
     {
-      "file": "contact.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+      "file": "sex-and-sleep-was-it-good-for-you.html",
+      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze_button_podcast_sex_sleep_was_it_good_for_you.webp",
+      "title": "Sex and Sleep: Was It Good For You?"
     },
     {
-      "file": "forgot.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "index.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexOrig.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexTest.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "login.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "register.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "reset.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "search.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "starter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "terms_conditions.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+      "file": "sex-and-sleep-was-it-good-for-you.html",
+      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze_button_podcast_sex_sleep_was_it_good_for_you.webp",
+      "title": "Sex and Sleep: Was It Good For You?"
     }
   ],
   "cry": [
@@ -2484,6 +2138,346 @@
       "title": "Songs About Sleep: The 15 Best of All Time"
     }
   ],
+  "magz": [
+    {
+      "file": "index.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "indexOrig.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "indexTest.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "login.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "privacy_policy.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "register.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "reset.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "search.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "starter.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "terms_conditions.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    }
+  ],
+  "html5": [
+    {
+      "file": "index.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "indexOrig.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "indexTest.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "login.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "privacy_policy.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "register.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "reset.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "search.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "starter.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "terms_conditions.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    }
+  ],
+  "css3": [
+    {
+      "file": "index.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "indexOrig.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "indexTest.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "login.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "privacy_policy.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "register.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "reset.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "search.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "starter.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "terms_conditions.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    }
+  ],
+  "template": [
+    {
+      "file": "index.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "index.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "indexOrig.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "indexOrig.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "indexTest.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "indexTest.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "login.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "login.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "privacy_policy.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "privacy_policy.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "register.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "register.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "reset.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "reset.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "search.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "search.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "starter.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "starter.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "terms_conditions.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "terms_conditions.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    }
+  ],
+  "magazine": [
+    {
+      "file": "index.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "indexOrig.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "indexTest.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "login.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "privacy_policy.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "register.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "reset.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "search.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "starter.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    },
+    {
+      "file": "terms_conditions.html",
+      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
+      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
+    }
+  ],
   "dan": [
     {
       "file": "lets-play-ball-how-sleep-affects-the-national-pastime.html",
@@ -2757,18 +2751,6 @@
       "file": "sleep-crutches-or-sleep-onset-associations.html",
       "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-podcast-the-many-challenges-of-insomnia-with-dr-jade-wu.webp",
       "title": "Sleep Crutches or Sleep Onset Associations"
-    }
-  ],
-  "sex": [
-    {
-      "file": "sex-and-sleep-was-it-good-for-you.html",
-      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze_button_podcast_sex_sleep_was_it_good_for_you.webp",
-      "title": "Sex and Sleep: Was It Good For You?"
-    },
-    {
-      "file": "sex-and-sleep-was-it-good-for-you.html",
-      "thumbnail": "https://thesnoozebutton.com/images/featured/snooze_button_podcast_sex_sleep_was_it_good_for_you.webp",
-      "title": "Sex and Sleep: Was It Good For You?"
     }
   ],
   "therapist": [
