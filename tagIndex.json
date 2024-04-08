@@ -368,6 +368,11 @@
       "title": "School Start Times: We're Failing Our Kids"
     },
     {
+      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
+      "thumbnail": "https://thesnoozebutton.com/images/ads/snooze-button-snoozeletter-sleep-newsletter.webp",
+      "title": "You're Awake Anyway, Why Not Read Stuff?"
+    },
+    {
       "file": "songs-about-sleep-the-15-best-of-all-time-page-2.html",
       "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-songs-about-sleep-the-15-best-of-all-time.webp",
       "title": "Songs About Sleep: The 15 Best of All Time"
@@ -2185,226 +2190,6 @@
       "title": "The Only Thing Your Wearable Sleep Tracker Is Good For With Dr. Michael Chee"
     }
   ],
-  "magz": [
-    {
-      "file": "indexOrig.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexTest.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "search.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "starter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "terms_conditions.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    }
-  ],
-  "html5": [
-    {
-      "file": "indexOrig.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexTest.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "search.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "starter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "terms_conditions.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    }
-  ],
-  "css3": [
-    {
-      "file": "indexOrig.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexTest.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "search.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "starter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "terms_conditions.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    }
-  ],
-  "template": [
-    {
-      "file": "indexOrig.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexOrig.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexTest.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexTest.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "search.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "search.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "starter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "starter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "terms_conditions.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "terms_conditions.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    }
-  ],
-  "magazine": [
-    {
-      "file": "indexOrig.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "indexTest.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "privacy_policy.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "search.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "starter.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    },
-    {
-      "file": "terms_conditions.html",
-      "thumbnail": "https://raw.githubusercontent.com/nauvalazhar/Magz/master/images/preview.png",
-      "title": "HTML5 & CSS3 magazine template is based on Bootstrap 3"
-    }
-  ],
   "dan": [
     {
       "file": "lets-play-ball-how-sleep-affects-the-national-pastime.html",
@@ -3018,6 +2803,20 @@
       "file": "snooze-button-beditorial-school-start-time-failing-our-kids.html",
       "thumbnail": "https://thesnoozebutton.com/images/featured/snooze-button-beditorial-school-start-times-failing-our-kids.webp",
       "title": "School Start Times: We're Failing Our Kids"
+    }
+  ],
+  "newsletter": [
+    {
+      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
+      "thumbnail": "https://thesnoozebutton.com/images/ads/snooze-button-snoozeletter-sleep-newsletter.webp",
+      "title": "You're Awake Anyway, Why Not Read Stuff?"
+    }
+  ],
+  "subscribe": [
+    {
+      "file": "snooze-button-snoozeletter-sleep-newsletter.html",
+      "thumbnail": "https://thesnoozebutton.com/images/ads/snooze-button-snoozeletter-sleep-newsletter.webp",
+      "title": "You're Awake Anyway, Why Not Read Stuff?"
     }
   ],
   "songs": [
