@@ -1,0 +1,9 @@
+# These fields let you change the homepage without touching HTML
+hero:
+  title:
+  url:
+  image:
+  excerpt:
+top:
+  items: []  # each item: { title, url, image, excerpt }
+latest_count: 6
