@@ -160,3 +160,5 @@ collections:
       - { label: "Hero Image", name: "hero", widget: "image", required: false }
       - { label: "Excerpt", name: "excerpt", widget: "text", required: false, hint: "1–2 sentences shown on cards" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Permalink (optional)", name: "permalink", widget: "string", required: false, hint: "e.g., /dr-jade-wu-hello-sleep.html" }
+
