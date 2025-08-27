@@ -123,54 +123,76 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 													</div>
 												</div>
 												<div class="row">
-													<article class="article col-md-4 mini">
-														<div class="inner">
-															<figure>
-																<a href="all-star-panel-wearable-sleep-trackers.html">
-																	<img src="images/featured/snooze-button-podcast-jesse-cook-dr-cathy-goldstein-dr-olivia-walch-wearable-sleep-trackers.webp" alt="All-Star Panel on Werable Sleep trackers">
-																</a>
-															</figure>
-															<div class="padding">
-																<div class="detail">
-																	<div class="time">June 16, 2024</div>
-																	<div class="category"><a href="podcast.html">Podcast</a></div>
+													{# Auto: latest 3 posts; fallback to your static three #}
+													{% if collections.posts and collections.posts.length %}
+														{% for p in collections.posts | slice(0,3) %}
+														<article class="article col-md-4 mini">
+															<div class="inner">
+																<figure>
+																	<a href="{{ p.url | url }}">
+																		{% if p.data.hero %}<img src="{{ p.data.hero | url }}" alt="{{ p.data.title }}">{% endif %}
+																	</a>
+																</figure>
+																<div class="padding">
+																	<div class="detail">
+																		<div class="time">{{ p.date | date("MMMM d, yyyy") }}</div>
+																		<div class="category"><a href="podcast.html">{{ (p.data.tags and p.data.tags[0]) or 'Podcast' }}</a></div>
+																	</div>
+																	<h2><a href="{{ p.url | url }}">{{ p.data.title }}</a></h2>
 																</div>
-																<h2><a href="all-star-panel-wearable-sleep-trackers.html">All-Star Panel on Wearable Sleep Trackers</a></h2>
 															</div>
-														</div>
-													</article>
-													<article class="article col-md-4 mini">
-														<div class="inner">
-															<figure>
-																<a href="dr-jade-wu-hello-sleep.html">
-																	<img src="images/featured/snooze-button-podcast-jade-wu-hello-sleep-website.webp" alt="Dr. Jade Wu: Hello, Sleep!">
-																</a>
-															</figure>
-															<div class="padding">
-																<div class="detail">
-																	<div class="time">June 10, 2024</div>
-																	<div class="category"><a href="podcast.html">Podcast</a></div>
+														</article>
+														{% endfor %}
+													{% else %}
+														<article class="article col-md-4 mini">
+															<div class="inner">
+																<figure>
+																	<a href="all-star-panel-wearable-sleep-trackers.html">
+																		<img src="images/featured/snooze-button-podcast-jesse-cook-dr-cathy-goldstein-dr-olivia-walch-wearable-sleep-trackers.webp" alt="All-Star Panel on Werable Sleep trackers">
+																	</a>
+																</figure>
+																<div class="padding">
+																	<div class="detail">
+																		<div class="time">June 16, 2024</div>
+																		<div class="category"><a href="podcast.html">Podcast</a></div>
+																	</div>
+																	<h2><a href="all-star-panel-wearable-sleep-trackers.html">All-Star Panel on Wearable Sleep Trackers</a></h2>
 																</div>
-																<h2><a href="dr-jade-wu-hello-sleep.html">Dr. Jade Wu: Hello, Sleep!</a></h2>
 															</div>
-														</div>
-													</article>
-													<article class="article col-md-4 mini">
-														<div class="inner">
-															<figure>
-																<a href="dr-michael-grandner-science-vs-the-real-world.html">
-																	<img src="images/featured/snooze-button-podcast-michael-grandner-sleep-science.webp" alt="The Disconnect Between Scientific Evidence and The Real World">
-																</a>
-															</figure>
-															<div class="padding">
-																<div class="detail">
-																	<div class="time">June 3, 2024</div>
-																	<div class="category"><a href="podcast.html">Podcast</a></div>
+														</article>
+														<article class="article col-md-4 mini">
+															<div class="inner">
+																<figure>
+																	<a href="dr-jade-wu-hello-sleep.html">
+																		<img src="images/featured/snooze-button-podcast-jade-wu-hello-sleep-website.webp" alt="Dr. Jade Wu: Hello, Sleep!">
+																	</a>
+																</figure>
+																<div class="padding">
+																	<div class="detail">
+																		<div class="time">June 10, 2024</div>
+																		<div class="category"><a href="podcast.html">Podcast</a></div>
+																	</div>
+																	<h2><a href="dr-jade-wu-hello-sleep.html">Dr. Jade Wu: Hello, Sleep!</a></h2>
 																</div>
-																<h2><a href="dr-michael-grandner-science-vs-the-real-world.html">The Disconnect Between Scientific Evidence and The Real World</a></h2>
 															</div>
-														</div>
-													</article>
+														</article>
+														<article class="article col-md-4 mini">
+															<div class="inner">
+																<figure>
+																	<a href="dr-michael-grandner-science-vs-the-real-world.html">
+																		<img src="images/featured/snooze-button-podcast-michael-grandner-sleep-science.webp" alt="The Disconnect Between Scientific Evidence and The Real World">
+																	</a>
+																</figure>
+																<div class="padding">
+																	<div class="detail">
+																		<div class="time">June 3, 2024</div>
+																		<div class="category"><a href="podcast.html">Podcast</a></div>
+																	</div>
+																	<h2><a href="dr-michael-grandner-science-vs-the-real-world.html">The Disconnect Between Scientific Evidence and The Real World</a></h2>
+																</div>
+															</div>
+														</article>
+													{% endif %}
 												</div>
 											</div>
 										</div>								
@@ -189,6 +211,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="row">
 					<div class="col-md-8 col-sm-12 col-xs-12">
 						<div class="owl-carousel owl-theme slide" id="featured">
+							{# HERO — from home.yml if set; else first post; else your static hero #}
+							{% if home and home.hero and home.hero.url %}
+							<div class="item">
+								<article class="featured">
+									<div class="overlay"></div>
+									<figure>
+										{% if home.hero.image %}<img src="{{ home.hero.image | url }}" alt="{{ home.hero.title | default('Featured') }}">{% endif %}
+									</figure>
+									<div class="details">
+										<div class="category"><a href="podcast.html">Podcast</a></div>
+										<h1><a href="{{ home.hero.url }}">{{ home.hero.title }}</a></h1>
+										{% if home.hero.excerpt %}<div class="time">{{ home.hero.excerpt }}</div>{% endif %}
+									</div>
+								</article>
+							</div>
+							{% elseif collections.posts and collections.posts.length %}
+							{% set p = collections.posts[0] %}
+							<div class="item">
+								<article class="featured">
+									<div class="overlay"></div>
+									<figure>
+										{% if p.data.hero %}<img src="{{ p.data.hero | url }}" alt="{{ p.data.title }}">{% endif %}
+									</figure>
+									<div class="details">
+										<div class="category"><a href="podcast.html">{{ (p.data.tags and p.data.tags[0]) or 'Podcast' }}</a></div>
+										<h1><a href="{{ p.url | url }}">{{ p.data.title }}</a></h1>
+										<div class="time">{{ p.date | date("MMMM d, yyyy") }}</div>
+									</div>
+								</article>
+							</div>
+							{% else %}
 							<div class="item">
 								<article class="featured">
 									<div class="overlay"></div>
@@ -202,14 +255,51 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									</div>
 								</article>
 							</div>
+							{% endif %}
 						</div>
+
 						<div class="line">
 							<div>Latest Episodes</div>
 						</div>
+
+						{# LATEST — auto from posts; fallback to your four static cards #}
+						{% if collections.posts and collections.posts.length %}
+						{% set count = home.latest_count or 4 %}
+						<div class="row">
+							{% set shown = 0 %}
+							{% for p in collections.posts %}
+								{% if shown < count %}
+								<article class="article col-md-6 col-sm-6 col-xs-12">
+									<div class="inner">
+										<figure>
+											<a href="{{ p.url | url }}">
+												{% if p.data.hero %}<img src="{{ p.data.hero | url }}" loading="lazy" alt="{{ p.data.title }}">{% endif %}
+											</a>
+										</figure>
+										<div class="padding">
+											<div class="detail">
+												<div class="time">{{ p.date | date("MMMM d, yyyy") }}</div>
+												<div class="category"><a href="podcast.html">{{ (p.data.tags and p.data.tags[0]) or 'Podcast' }}</a></div>
+											</div>
+											<h2><a href="{{ p.url | url }}">{{ p.data.title }}</a></h2>
+											{% if p.data.excerpt %}<p>{{ p.data.excerpt }}</p>{% endif %}
+											<footer>
+												<a class="btn btn-primary more" href="{{ p.url | url }}">
+													<div>More</div>
+													<div><i class="ion-ios-arrow-thin-right"></i></div>
+												</a>
+											</footer>
+										</div>
+									</div>
+								</article>
+								{% set shown = shown + 1 %}
+								{% endif %}
+							{% endfor %}
+						</div>
+						{% else %}
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="row">
-									<!-- THIS IS THE TOP LEFT STORY IN THE 'LATEST EPISODES' SECTION-->
 									<article class="article col-md-12">
 										<div class="inner">
 											<figure>
@@ -233,7 +323,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 											</div>
 										</div>
 									</article>
-									<!-- THIS IS THE BOTTOM LEFT STORY IN THE 'LATEST EPISODES' SECTION-->
 									<article class="article col-md-12">
 										<div class="inner">
 											<figure>
@@ -261,7 +350,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							</div>
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<div class="row">
-									<!-- THIS IS THE TOP RIGHT STORY IN THE 'LATEST EPISODES' SECTION-->
 									<article class="article col-md-12">
 										<div class="inner">
 											<figure>
@@ -285,7 +373,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 											</div>
 										</div>
 									</article>
-									<!-- THIS IS THE BOTTOM RIGHT STORY IN THE 'LATEST EPISODES' SECTION-->
 									<article class="article col-md-12">
 										<div class="inner">
 											<figure>
@@ -312,6 +399,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								</div>
 							</div>
 						</div>
+						{% endif %}
+
 						<div class="banner">
 							<a href="https://stjude.org" target="_blank">
 								<img src="images/ads/stjude-finding-cures-yates.webp" loading="lazy" alt="Support St. Jude Children's Research Hospital">
@@ -336,6 +425,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									</div>
 								</h1>
 								<div class="body-col vertical-slider" data-max="4" data-nav="#hot-news-nav" data-item="article">
+									{# Leaving this sidebar list as-is for now #}
 									<article class="article-mini">
 										<div class="inner">
 											<figure>
@@ -475,7 +565,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<aside>
 							<h1 class="aside-title">Popular</h1>
 							<div class="aside-body">
-								<!-- THIS IS THE FIRST ARTICLE IN THE 'POPULAR' LIST IN THE RIGHT SIDEBAR-->
+								<!-- Keeping this curated list static for now -->
 								<article class="article-mini">
 									<div class="inner">
 										<figure>
@@ -488,7 +578,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										</div>
 									</div>
 								</article>
-								<!-- THIS IS THE SECOND ARTICLE IN THE 'POPULAR' LIST IN THE RIGHT SIDEBAR-->
 								<article class="article-mini">
 									<div class="inner">
 										<figure>
@@ -501,7 +590,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										</div>
 									</div>
 								</article>
-								<!-- THIS IS THE THIRD ARTICLE IN THE 'POPULAR' LIST IN THE RIGHT SIDEBAR-->
 								<article class="article-mini">
 									<div class="inner">
 										<figure>
@@ -514,7 +602,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										</div>
 									</div>
 								</article>
-								<!-- THIS IS THE FOURTH ARTICLE IN THE 'POPULAR' LIST IN THE RIGHT SIDEBAR-->
 								<article class="article-mini">
 									<div class="inner">
 										<figure>
@@ -527,7 +614,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										</div>
 									</div>
 								</article>
-								<!-- THIS IS THE FIFTH ARTICLE IN THE 'POPULAR' LIST IN THE RIGHT SIDEBAR-->
 								<article class="article-mini">
 									<div class="inner">
 										<figure>
@@ -540,7 +626,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										</div>
 									</div>
 								</article>
-								<!-- THIS IS THE SIXTH ARTICLE IN THE 'POPULAR' LIST IN THE RIGHT SIDEBAR-->
 								<article class="article-mini">
 									<div class="inner">
 										<figure>
@@ -648,19 +733,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<aside id="sponsored">
                         <!-- Placeholder for future content -->
 						</aside>
-<!-- 						<aside>
-							<div class="aside-body">
-								<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-								<script>
-								  hbspt.forms.create({
-									region: "na1",
-									portalId: "21771695",
-									formId: "1cbc9472-d67b-48e8-aa60-35a4af3c6835"
-								  });
-								</script>							
-							</div>
-						</aside> -->
-												<!-- End sidebar code-->
 					</div>
 				</div>
 			</div>
@@ -705,56 +777,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<h1 class="block-title">Bedfellows</h1>
  							<div class="block-body">
                                 Coming soon!
-<!--								<article class="article-mini">
-									<div class="inner">
-										<figure>
-											<a href="single.html">
-												<img src="images/news/img12.jpg" alt="Sample Article">
-											</a>
-										</figure>
-										<div class="padding">
-											<h1><a href="single.html">Donec consequat lorem quis augue pharetra</a></h1>
-										</div>
-									</div>
-								</article>
-								<article class="article-mini">
-									<div class="inner">
-										<figure>
-											<a href="single.html">
-												<img src="images/news/img14.jpg" alt="Sample Article">
-											</a>
-										</figure>
-										<div class="padding">
-											<h1><a href="single.html">eu dapibus risus aliquam etiam ut venenatis</a></h1>
-										</div>
-									</div>
-								</article>
-								<article class="article-mini">
-									<div class="inner">
-										<figure>
-											<a href="single.html">
-												<img src="images/news/img15.jpg" alt="Sample Article">
-											</a>
-										</figure>
-										<div class="padding">
-											<h1><a href="single.html">Nulla facilisis odio quis gravida vestibulum </a></h1>
-										</div>
-									</div>
-								</article>
-								<article class="article-mini">
-									<div class="inner">
-										<figure>
-											<a href="single.html">
-												<img src="images/news/img16.jpg" alt="Sample Article">
-											</a>
-										</figure>
-										<div class="padding">
-											<h1><a href="single.html">Proin venenatis pellentesque arcu vitae </a></h1>
-										</div>
-									</div>
-								</article>
-								<a href="#" class="btn btn-magz white btn-block">See All <i class="ion-ios-arrow-thin-right"></i></a>
-                            -->
                             </div>
 						</div>
 					</div>
@@ -786,16 +808,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							</div>
 						</div>
 						<div class="line"></div>
-						<div class="block">
-<!-- 							<div class="block-body no-margin">
-								<ul class="footer-nav-horizontal">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="#">Partner</a></li>
-									<li><a href="contact.html">Contact</a></li>
-									<li><a href="page.html">About</a></li>
-								</ul>
-							</div>
- -->						</div>
+						<div class="block"></div>
 					</div>
 				</div>
 				<div class="row">
