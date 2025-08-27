@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"src/assets": "assets"});
 
   // near your other passthroughs
-eleventyConfig.addPassthroughCopy("admin");
+  eleventyConfig.addPassthroughCopy("admin");
 
   // Collections
   eleventyConfig.addCollection("posts", (collection) =>
