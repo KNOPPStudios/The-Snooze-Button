@@ -1,16 +1,3 @@
-site_url: https://thesnoozebutton.com
-
-backend:
-  name: github
-  repo: KNOPPStudios/The-Snooze-Button
-  branch: main
-  base_url: https://decap.thesnoozebutton.com   # Cloudflare Worker OAuth proxy
-  auth_endpoint: auth
-
-media_folder: "src/assets/uploads"
-public_folder: "/assets/uploads"
-publish_mode: simple
-
 collections:
   - name: "posts"
     label: "Posts"
@@ -35,12 +22,28 @@ collections:
         label: "Homepage Settings"
         name: "settings"
         fields:
-          # Pick posts by Title (easy for the editor). We’ll match by title in the template.
-          - { label: "Hero Post (by Title)", name: "hero_title", widget: "relation",
-              collection: "posts", search_fields: ["title"], value_field: "title",
-              display_fields: ["title"], required: false }
-          - { label: "Top Slots (by Title)", name: "top_titles", widget: "relation",
-              collection: "posts", multiple: true, search_fields: ["title"],
-              value_field: "title", display_fields: ["title"], required: false }
-          - { label: "Latest Count", name: "latest_count", widget: "number",
-              default: 6, min: 1, max: 24 }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+          - label: "Top Items"
+            name: "top"
+            widget: "object"
+            fields:
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                field:
+                  label: "Item"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "Title", name: "title", widget: "string" }
+                    - { label: "URL", name: "url", widget: "string" }
+                    - { label: "Image", name: "image", widget: "image", required: false }
+                    - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+          - { label: "Latest Count", name: "latest_count", widget: "number", default: 6, min: 1, max: 24 }
