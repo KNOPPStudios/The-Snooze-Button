@@ -1,0 +1,46 @@
+site_url: https://thesnoozebutton.com
+
+backend:
+  name: github
+  repo: KNOPPStudios/The-Snooze-Button
+  branch: main
+  base_url: https://decap.thesnoozebutton.com   # Cloudflare Worker OAuth proxy
+  auth_endpoint: auth
+
+media_folder: "src/assets/uploads"
+public_folder: "/assets/uploads"
+publish_mode: simple
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "src/posts"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Hero Image", name: "hero", widget: "image", required: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "home"
+    label: "Homepage"
+    delete: false
+    files:
+      - file: "src/_data/home.yml"
+        label: "Homepage Settings"
+        name: "settings"
+        fields:
+          # Pick posts by Title (easy for the editor). We’ll match by title in the template.
+          - { label: "Hero Post (by Title)", name: "hero_title", widget: "relation",
+              collection: "posts", search_fields: ["title"], value_field: "title",
+              display_fields: ["title"], required: false }
+          - { label: "Top Slots (by Title)", name: "top_titles", widget: "relation",
+              collection: "posts", multiple: true, search_fields: ["title"],
+              value_field: "title", display_fields: ["title"], required: false }
+          - { label: "Latest Count", name: "latest_count", widget: "number",
+              default: 6, min: 1, max: 24 }
