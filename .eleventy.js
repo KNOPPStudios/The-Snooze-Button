@@ -9,6 +9,9 @@ module.exports = function(eleventyConfig) {
   // Static assets passthrough (make folder if/when you need it)
   eleventyConfig.addPassthroughCopy({"src/assets": "assets"});
 
+  // near your other passthroughs
+eleventyConfig.addPassthroughCopy("admin");
+
   // Collections
   eleventyConfig.addCollection("posts", (collection) =>
     collection.getFilteredByGlob("src/posts/**/*.md").sort((a,b) => b.date - a.date)
