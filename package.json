@@ -3,15 +3,11 @@
   "private": true,
   "scripts": {
     "build": "ELEVENTY_ENV=prod npx @11ty/eleventy",
-    "dev": "npx @11ty/eleventy --serve",
-    "check:links": "npx lychee --verbose --no-progress --base . _site/**/*.html || true"
+    "dev": "npx @11ty/eleventy --serve"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-rss": "^2.0.0",
     "markdown-it": "^14.1.0"
-  },
-  "devDependencies": {
-    "lychee": "^0.15.0"
   }
 }
