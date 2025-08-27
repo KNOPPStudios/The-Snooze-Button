@@ -1,0 +1,10 @@
+{% if rel and rel.length %}
+<section aria-labelledby="related">
+  <h2 id="related">Related Stories</h2>
+  <ul>
+    {% for p in rel %}
+      <li><a href="{{ p.url }}">{{ p.data.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
