@@ -49,6 +49,28 @@ module.exports = function(eleventyConfig) {
     return top.slice(0, max);
   });
 
+  // Keep legacy root-level .html pages as .html so existing links keep working
+eleventyConfig.addGlobalData("eleventyComputed", {
+  permalink: (data) => {
+    // Don’t touch pages that already set a permalink (e.g., src/index.njk)
+    if (data.permalink) return data.permalink;
+
+    const p = data.page || {};
+    const input = p.inputPath || "";
+    const isRootHtml =
+      input.startsWith("./") &&
+      !input.startsWith("./src/") &&
+      input.endsWith(".html") &&
+      p.fileSlug !== "index"; // don't fight the homepage
+
+    if (isRootHtml) {
+      return `/${p.fileSlug}.html`;
+    }
+    return data.permalink;
+  }
+});
+
+
   // Nunjucks date filter: {{ someDate | date("MMMM d, yyyy") }}
   eleventyConfig.addNunjucksFilter("date", (value, format = "MMMM d, yyyy") => {
     const dt = value instanceof Date ? DateTime.fromJSDate(value) : DateTime.fromJSDate(new Date(value));
