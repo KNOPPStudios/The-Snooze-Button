@@ -1,9 +1,13 @@
 name: build-and-deploy
 on:
-  push: { branches: [ main, 11ty-decaf ] }
+  push:
+    branches: [ main, 11ty-decaf ]
   workflow_dispatch:
 
-permissions: { contents: write, pages: write, id-token: write }
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -14,8 +18,6 @@ jobs:
         with: { node-version: 20 }
       - run: npm install
       - run: npm run build
-      - name: Check broken links (non-fatal)
-        run: npm run check:links
       - uses: actions/upload-pages-artifact@v3
         with: { path: _site }
 
