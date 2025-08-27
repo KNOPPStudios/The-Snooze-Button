@@ -329,7 +329,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 												<a href="dr-michael-grandner-science-vs-the-real-world.html">
 												<img src="images/featured/snooze-button-podcast-michael-grandner-sleep-science.webp" loading="lazy" alt="The Disconnect Between Scientific Evidence and The Real World">
 												</a>
-											</figure>
+											figure>
 											<div class="padding">
 												<div class="detail">
 													<div class="time">June 3, 2024</div>
@@ -425,102 +425,123 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									</div>
 								</h1>
 								<div class="body-col vertical-slider" data-max="4" data-nav="#hot-news-nav" data-item="article">
-									{# Leaving this sidebar list as-is for now #}
-									<article class="article-mini">
-										<div class="inner">
-											<figure>
-												<a href="premiere-pilot-snooze-button-podcast.html">
-													<img src="images/featured/snooze-button-podcast-premiere-pilot.webp" loading="lazy" alt="Premiere/Pilot: The Snooze Button Podcast">
-												</a>
-											</figure>
-											<div class="padding">
-												<h1><a href="premiere-pilot-snooze-button-podcast.html">Premiere/Pilot: The Snooze Button Podcast</a></h1>
-												<div class="detail">
-													<div class="category"><a href="category.html">Podcast</a></div>
-													<div class="time">August 16, 2019</div>
+									{% if home.foot_of_bed and home.foot_of_bed.items and home.foot_of_bed.items.length %}
+										{% for item in home.foot_of_bed.items %}
+										<article class="article-mini">
+											<div class="inner">
+												<figure>
+													<a href="{{ item.url }}">
+														{% if item.image %}<img src="{{ item.image | url }}" loading="lazy" alt="{{ item.title }}">{% endif %}
+													</a>
+												</figure>
+												<div class="padding">
+													<h1><a href="{{ item.url }}">{{ item.title }}</a></h1>
+													<div class="detail">
+														{% if item.category %}<div class="category"><a href="category.html">{{ item.category }}</a></div>{% endif %}
+														{% if item.date %}<div class="time">{{ item.date }}</div>{% endif %}
+													</div>
 												</div>
 											</div>
-										</div>
-									</article>
-									<article class="article-mini">
-										<div class="inner">
-											<figure>
-												<a href="sleep-cognition-dr-adrian-owen-obe.html">
-													<img src="images/featured/snooze-button-podcast-sleep-cognition-dr-adrian-owen-obe.webp" loading="lazy" alt="Sleep & Cognition: Dr. Adrian Owen OBE">
-												</a>
-											</figure>
-											<div class="padding">
-												<h1><a href="sleep-cognition-dr-adrian-owen-obe.html">Sleep & Cognition: Dr. Adrian Owen OBE</a></h1>
-												<div class="detail">
-													<div class="category"><a href="category.html">Podcast</a></div>
-													<div class="time">September 9, 2019</div>
+										</article>
+										{% endfor %}
+									{% else %}
+										{# Fallback: your original six items #}
+										<article class="article-mini">
+											<div class="inner">
+												<figure>
+													<a href="premiere-pilot-snooze-button-podcast.html">
+														<img src="images/featured/snooze-button-podcast-premiere-pilot.webp" loading="lazy" alt="Premiere/Pilot: The Snooze Button Podcast">
+													</a>
+												</figure>
+												<div class="padding">
+													<h1><a href="premiere-pilot-snooze-button-podcast.html">Premiere/Pilot: The Snooze Button Podcast</a></h1>
+													<div class="detail">
+														<div class="category"><a href="category.html">Podcast</a></div>
+														<div class="time">August 16, 2019</div>
+													</div>
 												</div>
 											</div>
-										</div>
-									</article>
-									<article class="article-mini">
-										<div class="inner">
-											<figure>
-												<a href="roy-parvin-my-year-sleeping-dangerously.html">
-													<img src="images/featured/snooze-button-podcast-roy-parvin-my-year-sleeping-dangerously.webp" loading="lazy" alt="Roy Parvin: My Year of Sleeping Dangerously">
-												</a>
-											</figure>
-											<div class="padding">
-												<h1><a href="roy-parvin-my-year-sleeping-dangerously.html">Roy Parvin: My Year of Sleeping Dangerously"</a></h1>
-												<div class="detail">
-													<div class="category"><a href="podcast.html">Podcast</a></div>
-													<div class="time">October 23, 2019</div>
+										</article>
+										<article class="article-mini">
+											<div class="inner">
+												<figure>
+													<a href="sleep-cognition-dr-adrian-owen-obe.html">
+														<img src="images/featured/snooze-button-podcast-sleep-cognition-dr-adrian-owen-obe.webp" loading="lazy" alt="Sleep & Cognition: Dr. Adrian Owen OBE">
+													</a>
+												</figure>
+												<div class="padding">
+													<h1><a href="sleep-cognition-dr-adrian-owen-obe.html">Sleep & Cognition: Dr. Adrian Owen OBE</a></h1>
+													<div class="detail">
+														<div class="category"><a href="category.html">Podcast</a></div>
+														<div class="time">September 9, 2019</div>
+													</div>
 												</div>
 											</div>
-										</div>
-									</article>
-									<article class="article-mini">
-										<div class="inner">
-											<figure>
-												<a href="sleep-lab-results-part-one-dr-mark-boulos.html">
-													<img src="images/featured/snooze-button-podcast-sleep-lab-results-part-one-dr-mark-boulos.webp" loading="lazy" alt="Sleep Lab Results Part One: Dr. Mark Boulos">
-											</figure>
-											<div class="padding">
-												<h1><a href="sleep-lab-results-part-one-dr-mark-boulos.html">Sleep Lab Results Part One: Dr. Mark Boulos</a></h1>
-												<div class="detail">
-													<div class="category"><a href="podcast.html">Podcast</a></div>
-													<div class="time">October 24, 2019</div>
+										</article>
+										<article class="article-mini">
+											<div class="inner">
+												<figure>
+													<a href="roy-parvin-my-year-sleeping-dangerously.html">
+														<img src="images/featured/snooze-button-podcast-roy-parvin-my-year-sleeping-dangerously.webp" loading="lazy" alt="Roy Parvin: My Year of Sleeping Dangerously">
+													</a>
+												</figure>
+												<div class="padding">
+													<h1><a href="roy-parvin-my-year-sleeping-dangerously.html">Roy Parvin: My Year of Sleeping Dangerously"</a></h1>
+													<div class="detail">
+														<div class="category"><a href="podcast.html">Podcast</a></div>
+														<div class="time">October 23, 2019</div>
+													</div>
 												</div>
 											</div>
-										</div>
-									</article>
-									<article class="article-mini">
-										<div class="inner">
-											<figure>
-												<a href="single.html">
-													<img src="images/featured/snooze-button-podcast-become-your-child-sleep-coach-dr-lynelle-schneeberg.webp" loading="lazy" alt="Sample Article">
-												</a>
-											</figure>
-											<div class="padding">
-												<h1><a href="become-your-child-sleep-coach-dr-lynelle-schneeburg.html">Become Your Child's Sleep Coach with Dr. Lynelle Schneeberg</a></h1>
-												<div class="detail">
-													<div class="category"><a href="podcast.html">Podcast</a></div>
-													<div class="time">October 25, 2019</div>
+										</article>
+										<article class="article-mini">
+											<div class="inner">
+												<figure>
+													<a href="sleep-lab-results-part-one-dr-mark-boulos.html">
+														<img src="images/featured/snooze-button-podcast-sleep-lab-results-part-one-dr-mark-boulos.webp" loading="lazy" alt="Sleep Lab Results Part One: Dr. Mark Boulos">
+												</figure>
+												<div class="padding">
+													<h1><a href="sleep-lab-results-part-one-dr-mark-boulos.html">Sleep Lab Results Part One: Dr. Mark Boulos</a></h1>
+													<div class="detail">
+														<div class="category"><a href="podcast.html">Podcast</a></div>
+														<div class="time">October 24, 2019</div>
+													</div>
 												</div>
 											</div>
-										</div>
-									</article>
-									<article class="article-mini">
-										<div class="inner">
-											<figure>
-												<a href="lets-play-ball-how-sleep-affects-the-national-pastime.html">
-													<img src="images/featured/snooze-button-podcast-lets-play-ball-how-sleep-affects-national-pastime.webp" loading="lazy" alt="Let's Play Ball! How Sleep Affects the National Pastime">
-												</a>
-											</figure>
-											<div class="padding">
-												<h1><a href="lets-play-ball-how-sleep-affects-the-national-pastime.html">Let's Play Ball! How Sleep Affects the National Pastime</a></h1>
-												<div class="detail">
-													<div class="category"><a href="podcast.html">Podcast</a></div>
-													<div class="time">October 26, 2019</div>
+										</article>
+										<article class="article-mini">
+											<div class="inner">
+												<figure>
+													<a href="become-your-child-sleep-coach-dr-lynelle-schneeburg.html">
+														<img src="images/featured/snooze-button-podcast-become-your-child-sleep-coach-dr-lynelle-schneeberg.webp" loading="lazy" alt="Become Your Child's Sleep Coach with Dr. Lynelle Schneeberg">
+													</a>
+												</figure>
+												<div class="padding">
+													<h1><a href="become-your-child-sleep-coach-dr-lynelle-schneeburg.html">Become Your Child's Sleep Coach with Dr. Lynelle Schneeberg</a></h1>
+													<div class="detail">
+														<div class="category"><a href="podcast.html">Podcast</a></div>
+														<div class="time">October 25, 2019</div>
+													</div>
 												</div>
 											</div>
-										</div>
-									</article>
+										</article>
+										<article class="article-mini">
+											<div class="inner">
+												<figure>
+													<a href="lets-play-ball-how-sleep-affects-the-national-pastime.html">
+														<img src="images/featured/snooze-button-podcast-lets-play-ball-how-sleep-affects-national-pastime.webp" loading="lazy" alt="Let's Play Ball! How Sleep Affects the National Pastime">
+													</a>
+												</figure>
+												<div class="padding">
+													<h1><a href="lets-play-ball-how-sleep-affects-the-national-pastime.html">Let's Play Ball! How Sleep Affects the National Pastime</a></h1>
+													<div class="detail">
+														<div class="category"><a href="podcast.html">Podcast</a></div>
+														<div class="time">October 26, 2019</div>
+													</div>
+												</div>
+											</div>
+										</article>
+									{% endif %}
 								</div>
 								<aside>
 									<div class="aside-body">
@@ -565,79 +586,96 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<aside>
 							<h1 class="aside-title">Popular</h1>
 							<div class="aside-body">
-								<!-- Keeping this curated list static for now -->
-								<article class="article-mini">
-									<div class="inner">
-										<figure>
-											<a href="songs-about-sleep-the-15-best-of-all-time.html">
-												<img src="images/featured/snooze-button-songs-about-sleep-the-15-best-of-all-time.webp" loading="lazy" alt="Songs About Sleep - The 15 Best Of All Time">
-											</a>
-										</figure>
-										<div class="padding">
-											<h1><a href="songs-about-sleep-the-15-best-of-all-time.html">Songs About Sleep - The 15 Best Of All Time</a></h1>
+								{% if home.popular and home.popular.items and home.popular.items.length %}
+									{% for item in home.popular.items %}
+									<article class="article-mini">
+										<div class="inner">
+											<figure>
+												<a href="{{ item.url }}">
+													{% if item.image %}<img src="{{ item.image | url }}" loading="lazy" alt="{{ item.title }}">{% endif %}
+												</a>
+											</figure>
+											<div class="padding">
+												<h1><a href="{{ item.url }}">{{ item.title }}</a></h1>
+											</div>
 										</div>
-									</div>
-								</article>
-								<article class="article-mini">
-									<div class="inner">
-										<figure>
-											<a href="fitbit-new-sleep-score-what-it-means.html">
-												<img src="images/featured/snooze-button-fitbit-new-sleep-score-what-it-means.webp" loading="lazy" alt="Fitbit's New 'Sleep Score', and What It Means">
-											</a>
-										</figure>
-										<div class="padding">
-											<h1><a href="fitbit-new-sleep-score-what-it-means.html">Fitbit's New 'Sleep Score', and What It Means</a></h1>
+									</article>
+									{% endfor %}
+								{% else %}
+									{# Fallback: your original curated list #}
+									<article class="article-mini">
+										<div class="inner">
+											<figure>
+												<a href="songs-about-sleep-the-15-best-of-all-time.html">
+													<img src="images/featured/snooze-button-songs-about-sleep-the-15-best-of-all-time.webp" loading="lazy" alt="Songs About Sleep - The 15 Best Of All Time">
+												</a>
+											</figure>
+											<div class="padding">
+												<h1><a href="songs-about-sleep-the-15-best-of-all-time.html">Songs About Sleep - The 15 Best Of All Time</a></h1>
+											</div>
 										</div>
-									</div>
-								</article>
-								<article class="article-mini">
-									<div class="inner">
-										<figure>
-											<a href="cry-it-out-the-conversation-mad-about-you-paul-reiser-helen-hunt.html">
-												<img src="images/featured/snooze-button-podcast-cry-it-out-the-conversation-mad-about-you-paul-reiser-helen-hunt.webp" loading="lazy" alt="Sample Article">
-											</a>
-										</figure>
-										<div class="padding">
-											<h1><a href="cry-it-out-the-conversation-mad-about-you-paul-reiser-helen-hunt.html">Paul Reiser and Helen Hunt Talk About the Sleep Training Episode of 'Mad About You'</a></h1>
+									</article>
+									<article class="article-mini">
+										<div class="inner">
+											<figure>
+												<a href="fitbit-new-sleep-score-what-it-means.html">
+													<img src="images/featured/snooze-button-fitbit-new-sleep-score-what-it-means.webp" loading="lazy" alt="Fitbit's New 'Sleep Score', and What It Means">
+												</a>
+											</figure>
+											<div class="padding">
+												<h1><a href="fitbit-new-sleep-score-what-it-means.html">Fitbit's New 'Sleep Score', and What It Means</a></h1>
+											</div>
 										</div>
-									</div>
-								</article>
-								<article class="article-mini">
-									<div class="inner">
-										<figure>
-											<a href="boring-books-for-bedtime-with-sharon-handy.html">
-												<img src="images/featured/snooze-button-podcast-boring-books-for-bedtime-with-sharon-handy.webp" loading="lazy" alt="Boring Books For Bedtime with Sharon Handy">
-											</a>
-										</figure>
-										<div class="padding">
-											<h1><a href="boring-books-for-bedtime-with-sharon-handy.html">Boring Books For Bedtime with Sharon Handy</a></h1>
+									</article>
+									<article class="article-mini">
+										<div class="inner">
+											<figure>
+												<a href="cry-it-out-the-conversation-mad-about-you-paul-reiser-helen-hunt.html">
+													<img src="images/featured/snooze-button-podcast-cry-it-out-the-conversation-mad-about-you-paul-reiser-helen-hunt.webp" loading="lazy" alt="Sample Article">
+												</a>
+											</figure>
+											<div class="padding">
+												<h1><a href="cry-it-out-the-conversation-mad-about-you-paul-reiser-helen-hunt.html">Paul Reiser and Helen Hunt Talk About the Sleep Training Episode of 'Mad About You'</a></h1>
+											</div>
 										</div>
-									</div>
-								</article>
-								<article class="article-mini">
-									<div class="inner">
-										<figure>
-											<a href="the-only-thing-your-wearable-sleep-tracker-is-good-for.html">
-												<img src="images/featured/snooze-button-podcast-the-only-thing-your-wearable-sleep-tracker-is-good-for.webp" loading="lazy" alt="The Only Thing Your Wearable Sleep Tracker Is Good For with Dr. Michael Chee">
-											</a>
-										</figure>
-										<div class="padding">
-											<h1><a href="the-only-thing-your-wearable-sleep-tracker-is-good-for.html">The Only Thing Your Wearable Sleep Tracker Is Good For with Dr. Michael Chee</a></h1>
+									</article>
+									<article class="article-mini">
+										<div class="inner">
+											<figure>
+												<a href="boring-books-for-bedtime-with-sharon-handy.html">
+													<img src="images/featured/snooze-button-podcast-boring-books-for-bedtime-with-sharon-handy.webp" loading="lazy" alt="Boring Books For Bedtime with Sharon Handy">
+												</a>
+											</figure>
+											<div class="padding">
+												<h1><a href="boring-books-for-bedtime-with-sharon-handy.html">Boring Books For Bedtime with Sharon Handy</a></h1>
+											</div>
 										</div>
-									</div>
-								</article>
-								<article class="article-mini">
-									<div class="inner">
-										<figure>
-											<a href="congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html">
-												<img src="images/featured/snooze-button-podcast-congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.webp" loading="lazy" alt="Sample Article">
-											</a>
-										</figure>
-										<div class="padding">
-											<h1><a href="congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html">Congresswoman Stacey Plaskett and her Surprising Sleep Routine</a></h1>
+									</article>
+									<article class="article-mini">
+										<div class="inner">
+											<figure>
+												<a href="the-only-thing-your-wearable-sleep-tracker-is-good-for.html">
+													<img src="images/featured/snooze-button-podcast-the-only-thing-your-wearable-sleep-tracker-is-good-for.webp" loading="lazy" alt="The Only Thing Your Wearable Sleep Tracker Is Good For with Dr. Michael Chee">
+												</a>
+											</figure>
+											<div class="padding">
+												<h1><a href="the-only-thing-your-wearable-sleep-tracker-is-good-for.html">The Only Thing Your Wearable Sleep Tracker Is Good For with Dr. Michael Chee</a></h1>
+											</div>
 										</div>
-									</div>
-								</article>
+									</article>
+									<article class="article-mini">
+										<div class="inner">
+											<figure>
+												<a href="congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html">
+													<img src="images/featured/snooze-button-podcast-congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.webp" loading="lazy" alt="Sample Article">
+												</a>
+											</figure>
+											<div class="padding">
+												<h1><a href="congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html">Congresswoman Stacey Plaskett and her Surprising Sleep Routine</a></h1>
+											</div>
+										</div>
+									</article>
+								{% endif %}
 							</div>
 						</aside>
 						<aside>
