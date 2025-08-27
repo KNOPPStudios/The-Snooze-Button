@@ -1,34 +1,70 @@
-collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "src/posts"
-    create: true
-    extension: "md"
-    format: "frontmatter"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list", required: false }
-      - { label: "Hero Image", name: "hero", widget: "image", required: false }
-      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+backend:
+  name: github
+  repo: KNOPPStudios/The-Snooze-Button
+  branch: main
+  base_url: https://decap.thesnoozebutton.com
+  auth_endpoint: /auth
 
+site_url: https://thesnoozebutton.com
+display_url: https://thesnoozebutton.com
+logo_url: https://thesnoozebutton.com/images/the_snooze_button_logo_780_117.webp
+locale: en
+
+publish_mode: editorial_workflow
+editor:
+  preview: false
+
+# Where uploaded media files are stored in the repo
+media_folder: "images/uploads"
+# How they’re referenced on the site
+public_folder: "/images/uploads"
+
+collections:
+  # -------- Homepage singleton (src/_data/home.yml) --------
   - name: "home"
     label: "Homepage"
-    delete: false
     files:
-      - file: "src/_data/home.yml"
-        label: "Homepage Settings"
-        name: "settings"
+      - label: "Homepage Settings"
+        name: "home"
+        file: "src/_data/home.yml"
         fields:
-          - label: "Popular"
-            name: "popular"
+          - label: "Hero"
+            name: "hero"
             widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "URL", name: "url", widget: "string", required: false }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Excerpt (optional)", name: "excerpt", widget: "text", required: false }
+
+          - label: "Top Section"
+            name: "top"
+            widget: "object"
+            collapsed: true
             fields:
               - label: "Items"
                 name: "items"
                 widget: "list"
+                required: false
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+                  - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+
+          - { label: "Latest Episodes — how many to show", name: "latest_count", widget: "number", value_type: "int", min: 1, max: 24, required: false }
+
+          - label: "Popular (right sidebar)"
+            name: "popular"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                required: false
                 summary: "{{fields.title}}"
                 fields:
                   - { label: "Title", name: "title", widget: "string" }
@@ -38,10 +74,12 @@ collections:
           - label: "The Foot of the Bed"
             name: "foot_of_bed"
             widget: "object"
+            collapsed: true
             fields:
               - label: "Items"
                 name: "items"
                 widget: "list"
+                required: false
                 summary: "{{fields.title}} — {{fields.category}}"
                 fields:
                   - { label: "Title", name: "title", widget: "string" }
@@ -49,28 +87,21 @@ collections:
                   - { label: "Image", name: "image", widget: "image", required: false }
                   - { label: "Category", name: "category", widget: "string", required: false }
                   - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, required: false }
-          - label: "Hero"
-            name: "hero"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
-              - { label: "Image", name: "image", widget: "image", required: false }
-              - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
-          - label: "Top Items"
-            name: "top"
-            widget: "object"
-            fields:
-              - label: "Items"
-                name: "items"
-                widget: "list"
-                field:
-                  label: "Item"
-                  name: "item"
-                  widget: "object"
-                  fields:
-                    - { label: "Title", name: "title", widget: "string" }
-                    - { label: "URL", name: "url", widget: "string" }
-                    - { label: "Image", name: "image", widget: "image", required: false }
-                    - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
-          - { label: "Latest Count", name: "latest_count", widget: "number", default: 6, min: 1, max: 24 }
+
+  # -------- Posts collection (new content) --------
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    folder: "src/posts"
+    create: true
+    slug: "{{slug}}"
+    # You can adjust pathing later; this keeps URLs clean
+    path: "{{slug}}/index"
+    extension: "md"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ" }
+      - { label: "Tags (for related posts)", name: "tags", widget: "list", required: false, default: ["podcast"] }
+      - { label: "Hero Image", name: "hero", widget: "image", required: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false, hint: "1–2 sentences shown on cards" }
+      - { label: "Body", name: "body", widget: "markdown" }
