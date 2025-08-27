@@ -1,9 +1,49 @@
-# These fields let you change the homepage without touching HTML
+# Homepage Settings (editable in Decap)
+
+# Hero card at the top of the page
 hero:
   title:
   url:
   image:
   excerpt:
+
+# “Top” cards/grid under the hero (optional)
 top:
-  items: []  # each item: { title, url, image, excerpt }
+  items: []
+  # Example:
+  # items:
+  #   - title: Dr. Jade Wu: Hello, Sleep!
+  #     url: /dr-jade-wu-hello-sleep/
+  #     image: /images/featured/snooze-button-podcast-jade-wu-hello-sleep-website.webp
+  #     excerpt: When the doctor becomes the patient.
+
+# How many to show in “Latest Episodes”
 latest_count: 6
+
+# Right-rail “Popular” list (image + title + link)
+popular:
+  items: []
+  # Example:
+  # items:
+  #   - title: Songs About Sleep - The 15 Best Of All Time
+  #     url: /songs-about-sleep-the-15-best-of-all-time/
+  #     image: /images/featured/snooze-button-songs-about-sleep-the-15-best-of-all-time.webp
+  #   - title: Fitbit's New 'Sleep Score', and What It Means
+  #     url: /fitbit-new-sleep-score-what-it-means/
+  #     image: /images/featured/snooze-button-fitbit-new-sleep-score-what-it-means.webp
+
+# “The Foot of the Bed” vertical slider (image + title + category + date)
+foot_of_bed:
+  items: []
+  # Example:
+  # items:
+  #   - title: Premiere/Pilot: The Snooze Button Podcast
+  #     url: /premiere-pilot-snooze-button-podcast/
+  #     image: /images/featured/snooze-button-podcast-premiere-pilot.webp
+  #     category: Podcast
+  #     date: 2019-08-16
+  #   - title: Sleep & Cognition: Dr. Adrian Owen OBE
+  #     url: /sleep-cognition-dr-adrian-owen-obe/
+  #     image: /images/featured/snooze-button-podcast-sleep-cognition-dr-adrian-owen-obe.webp
+  #     category: Podcast
+  #     date: 2019-09-09
