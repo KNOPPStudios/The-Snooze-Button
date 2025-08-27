@@ -258,6 +258,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							{% endif %}
 						</div>
 
+						{% if home.top and home.top.items and home.top.items.length %}
+						<div class="line"><div>Featured</div></div>
+						<div class="row">
+						  {% for item in home.top.items %}
+						  <article class="article col-md-4 mini">
+						    <div class="inner">
+						      <figure>
+						        <a href="{{ item.url }}">
+						          {% if item.image %}<img src="{{ item.image | url }}" alt="{{ item.title }}">{% endif %}
+						        </a>
+						      </figure>
+						      <div class="padding">
+						        <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+						        {% if item.excerpt %}<p>{{ item.excerpt }}</p>{% endif %}
+						      </div>
+						    </div>
+						  </article>
+						  {% endfor %}
+						</div>
+						{% endif %}
+
+
 						<div class="line">
 							<div>Latest Episodes</div>
 						</div>
@@ -679,92 +701,95 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							</div>
 						</aside>
 						<aside>
-							<ul class="nav nav-tabs nav-justified" role="tablist">
-								<li class="active">
-									<a href="#recomended" aria-controls="recomended" role="tab" data-toggle="tab">
-										<i class="ion-android-star-outline"></i> Beditorials
-									</a>
-								</li>
-								<li>
-									<a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">
-										<i class="ion-ios-chatboxes-outline"></i> Reviews
-									</a>
-								</li>
-							</ul>
-							<div class="tab-content">
-								<div class="tab-pane active" id="recomended">
-									<article class="article-fw">
-										<div class="inner">
-											<figure>
-												<a href="snooze-button-beditorial-school-start-time-failing-our-kids.html">
-													<img src="images/featured/snooze-button-beditorial-school-start-times-failing-our-kids.webp" loading="lazy" alt="School Start Times: We're Failing Our Kids">
-												</a>
-											</figure>
-											<div class="details">
-												<div class="detail">
-													<div class="time">March 29, 2021</div>
-													<div class="category"><a href="beditorials.html">Beditorials</a></div>
-												</div>
-												<h1><a href="snooze-button-beditorial-school-start-time-failing-our-kids.html">School Start Times: We're Failing Our Kids</a></h1>
-												<p>
-													The science doesn't lie: We're making a deliberate choice to not only harm our children, but to put them in danger. Why? 
-												</p>
-											</div>
-										</div>
-									</article>
-									<div class="line"></div>
-									<article class="article-mini">
-										<div class="inner">
-											<figure>
-												<a href="snooze-button-beditorial-insomnia-treatments-why-does-no-one-call-bullshit.html">
-													<img src="images/featured/snooze-button-beditorial-insomnia-treatments-why-does-no-one-call-bullshit.webp" loading="lazy" alt="Insomnia Treatments: Why Does No One Call 'Bullshit'?">
-												</a>
-                                            </figure>
-											<div class="padding">
-												<h1><a href="snooze-button-beditorial-insomnia-treatments-why-does-no-one-call-bullshit.html">Insomnia Treatments: Why Does No One Call 'Bullshit'?</a></h1>
-												<div class="detail">
-													<div class="category"><a href="beditorials.html">Beditorials</a></div>
-													<div class="time">October 12, 2021</div>
-												</div>
-											</div>
-										</div>
-									</article>
-								</div>
-								<div class="tab-pane comments" id="comments">
-                                    <!-- Placeholder for reviews-->
-								</div>
-							</div>
+						  <ul class="nav nav-tabs nav-justified" role="tablist">
+						    <li class="active">
+						      <a href="#recomended" aria-controls="recomended" role="tab" data-toggle="tab">
+						        <i class="ion-android-star-outline"></i> Beditorials
+						      </a>
+						    </li>
+						    <li>
+						      <a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">
+						        <i class="ion-ios-chatboxes-outline"></i> Reviews
+						      </a>
+						    </li>
+						  </ul>
+						
+						  <div class="tab-content">
+						    <div class="tab-pane active" id="recomended">
+						      {% if home.beditorials and home.beditorials.featured and home.beditorials.featured.title %}
+						      <article class="article-fw">
+						        <div class="inner">
+						          <figure>
+						            <a href="{{ home.beditorials.featured.url }}">
+						              {% if home.beditorials.featured.image %}<img src="{{ home.beditorials.featured.image | url }}" loading="lazy" alt="{{ home.beditorials.featured.title }}">{% endif %}
+						            </a>
+						          </figure>
+						          <div class="details">
+						            <div class="detail">
+						              {% if home.beditorials.featured.date %}<div class="time">{{ home.beditorials.featured.date }}</div>{% endif %}
+						              {% if home.beditorials.featured.category %}<div class="category"><a href="beditorials.html">{{ home.beditorials.featured.category }}</a></div>{% endif %}
+						            </div>
+						            <h1><a href="{{ home.beditorials.featured.url }}">{{ home.beditorials.featured.title }}</a></h1>
+						            {% if home.beditorials.featured.excerpt %}<p>{{ home.beditorials.featured.excerpt }}</p>{% endif %}
+						          </div>
+						        </div>
+						      </article>
+						      {% endif %}
+						
+						      {% if home.beditorials and home.beditorials.items and home.beditorials.items.length %}
+						      <div class="line"></div>
+						      {% for item in home.beditorials.items %}
+						      <article class="article-mini">
+						        <div class="inner">
+						          <figure>
+						            <a href="{{ item.url }}">
+						              {% if item.image %}<img src="{{ item.image | url }}" loading="lazy" alt="{{ item.title }}">{% endif %}
+						            </a>
+						          </figure>
+						          <div class="padding">
+						            <h1><a href="{{ item.url }}">{{ item.title }}</a></h1>
+						            <div class="detail">
+						              {% if item.category %}<div class="category"><a href="beditorials.html">{{ item.category }}</a></div>{% endif %}
+						              {% if item.date %}<div class="time">{{ item.date }}</div>{% endif %}
+						            </div>
+						          </div>
+						        </div>
+						      </article>
+						      {% endfor %}
+						      {% endif %}
+						    </div>
+						
+						    <div class="tab-pane comments" id="comments">
+						      <!-- Placeholder for reviews -->
+						    </div>
+						  </div>
 						</aside>
-                        <aside>
-                            <ul class="nav nav-tabs nav-justified" role="tablist">
-								<li class="active">
-									<a href="#recomended" aria-controls="newsletter" role="tab" data-toggle="tab">
-										<i class="ion-ios-email-outline"></i> Sign Up for The Snoozeletter
-									</a>
-								</li>
-							</ul>
-
-                            <div class="aside-body">
-                                <div class="tab-pane active" id="newsletter">
-                                    <article class="article-fw">
-                                        <div class="inner">
-                                            <figure>
-                                                <a href="snooze-button-snoozeletter-sleep-newsletter.html">
-                                                    <img src="images/ads/snooze-button-snoozeletter-sleep-newsletter.webp" loading="lazy" alt="Subscribe to The Snoozeletter">
-                                                </a>
-                                            </figure>
-                                            <div class="details">
-                                                <h1>
-                                                    <a href="snooze-button-snoozeletter-sleep-newsletter.html">
-                                                        You're Awake Anyway, Why Not Read Stuff?</a>
-                                                </h1>
-                                                <p>Our latest podcast episodes, and the news from the sleep world that actually matters. <em>And we promise never to try and sell you those ridiculous, useless melatonin gummies.</em></p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </aside>
+						<aside>
+						  <ul class="nav nav-tabs nav-justified" role="tablist">
+						    <li class="active">
+						      <a href="#newsletter" aria-controls="newsletter" role="tab" data-toggle="tab">
+						        <i class="ion-ios-email-outline"></i> Sign Up for The Snoozeletter
+						      </a>
+						    </li>
+						  </ul>
+						  <div class="aside-body">
+						    <div class="tab-pane active" id="newsletter">
+						      <article class="article-fw">
+						        <div class="inner">
+						          <figure>
+						            <a href="{{ home.newsletter.url }}">
+						              {% if home.newsletter.image %}<img src="{{ home.newsletter.image | url }}" loading="lazy" alt="{{ home.newsletter.title }}">{% endif %}
+						            </a>
+						          </figure>
+						          <div class="details">
+						            <h1><a href="{{ home.newsletter.url }}">{{ home.newsletter.title }}</a></h1>
+						            {% if home.newsletter.blurb %}<p>{{ home.newsletter.blurb | safe }}</p>{% endif %}
+						          </div>
+						        </div>
+						      </article>
+						    </div>
+						  </div>
+						</aside>
 						<aside>
                             <!-- Placeholder for video content -->
 						</aside>
