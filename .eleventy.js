@@ -1,20 +1,35 @@
 const pluginRSS = require("@11ty/eleventy-plugin-rss");
 const markdownIt = require("markdown-it");
 const { DateTime } = require("luxon");
+const fs = require("fs");
 
 module.exports = function(eleventyConfig) {
   // Markdown: allow raw HTML for embeds (Captivate etc.)
   eleventyConfig.setLibrary("md", markdownIt({ html: true, linkify: true }));
 
-  // Static assets passthrough (make folder if/when you need it)
-  eleventyConfig.addPassthroughCopy({"src/assets": "assets"});
+  // Ensure a .nojekyll file exists so GitHub Pages serves everything as-is
+  eleventyConfig.on("eleventy.before", () => {
+    try { if (!fs.existsSync(".nojekyll")) fs.writeFileSync(".nojekyll", ""); } catch (_) {}
+  });
 
-  // near your other passthroughs
-  eleventyConfig.addPassthroughCopy("admin");
+  // Passthrough static assets from the repo root (these are the folders your HTML references)
+  eleventyConfig.addPassthroughCopy({
+    "css": "css",
+    "js": "js",
+    "images": "images",
+    "scripts": "scripts",
+    "fonts": "fonts",           // keep if you add one later
+    "admin": "admin",           // Decap CMS
+    "favicon.ico": "favicon.ico",
+    ".nojekyll": ".nojekyll"
+  });
+
+  // If you actually use src/assets, keep this too (safe to leave even if empty)
+  eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
 
   // Collections
   eleventyConfig.addCollection("posts", (collection) =>
-    collection.getFilteredByGlob("src/posts/**/*.md").sort((a,b) => b.date - a.date)
+    collection.getFilteredByGlob("src/posts/**/*.md").sort((a, b) => b.date - a.date)
   );
 
   // Related posts (by tag overlap, then newest)
@@ -50,6 +65,7 @@ module.exports = function(eleventyConfig) {
   // Directories
   return {
     dir: { input: ".", includes: "src/_includes", data: "src/_data", output: "_site" },
+    templateFormats: ["njk", "md", "html"],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk"
   };
