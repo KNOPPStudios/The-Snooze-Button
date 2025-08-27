@@ -1,0 +1,10 @@
+<section aria-labelledby="latest">
+  <h2 id="latest">Latest Stories</h2>
+  <ul>
+  {% for p in collections.posts | slice(0,6) %}
+    <li><a href="{{ p.url }}">{{ p.data.title }}</a> <small>({{ p.date | date("MMM d, yyyy") }})</small></li>
+  {% else %}
+    <li><em>No new Markdown posts yet.</em></li>
+  {% endfor %}
+  </ul>
+</section>
