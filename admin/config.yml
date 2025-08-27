@@ -71,6 +71,61 @@ collections:
                   - { label: "URL", name: "url", widget: "string" }
                   - { label: "Image", name: "image", widget: "image", required: false }
 
+          - label: "Top (curated row below hero)"
+            name: "top"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                required: false
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+                  - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+
+          - label: "Beditorials (sidebar block)"
+            name: "beditorials"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Featured"
+                name: "featured"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - { label: "Title", name: "title", widget: "string", required: false }
+                  - { label: "URL", name: "url", widget: "string", required: false }
+                  - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Category", name: "category", widget: "string", required: false, default: "Beditorials" }
+                  - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, required: false }
+                  - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+              - label: "Other items"
+                name: "items"
+                widget: "list"
+                required: false
+                summary: "{{fields.title}} — {{fields.date}}"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string" }
+                  - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Category", name: "category", widget: "string", required: false, default: "Beditorials" }
+                  - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, required: false }
+
+          - label: "Newsletter Block"
+            name: "newsletter"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Blurb", name: "blurb", widget: "text", required: false }
+
+
           - label: "The Foot of the Bed"
             name: "foot_of_bed"
             widget: "object"
