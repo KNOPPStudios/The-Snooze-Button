@@ -2,9 +2,6 @@
 permalink: /
 layout: null
 ---
-{% set heroCfg = home.hero or {} %}
-{% set heroPost = collections.posts | first %}
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -214,53 +211,64 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="row">
 					<div class="col-md-8 col-sm-12 col-xs-12">
 						<div class="owl-carousel owl-theme slide" id="featured">
-							{# HERO — from home.yml if set; else first post; else your static hero #}
-							{% if home and home.hero and home.hero.url %}
+
+							{# --- HERO (Decap-driven, with optional post auto-sync) --- #}
+							{% set heroCfg = (home and home.hero) ? home.hero : {} %}
+							{% set heroPost = null %}
+
+							{# If Hero has a URL, try to find the matching post by url or permalink #}
+							{% if heroCfg.url and collections.posts and collections.posts.length %}
+							  {% for p in collections.posts %}
+							    {% set pUrl = p.url | url %}
+							    {% set pPerm = p.data.permalink ? (p.data.permalink | url) : "" %}
+							    {% if pUrl == (heroCfg.url | url) or pPerm == (heroCfg.url | url) %}
+							      {% set heroPost = p %}
+							    {% endif %}
+							  {% endfor %}
+							{% endif %}
+
+							{# If no explicit hero target, fall back to newest post #}
+							{% if not heroPost and collections.posts and collections.posts.length %}
+							  {% set heroPost = collections.posts[0] %}
+							{% endif %}
+
+							{# Choose final fields: prefer explicit hero config; else take from post #}
+							{% set heroTitle   = heroCfg.title   or (heroPost and heroPost.data.title) %}
+							{% set heroHref    = heroCfg.url     or (heroPost and (heroPost.data.permalink or heroPost.url)) %}
+							{% set heroImg     = heroCfg.image   or (heroPost and heroPost.data.hero) %}
+							{% set heroCat     = heroCfg.category or (heroPost and (heroPost.data.tags and heroPost.data.tags[0])) or "Podcast" %}
+							{% set heroCatUrl  = heroCfg.category_url or "/podcast.html" %}
+							{% set heroDate    = heroCfg.date    or (heroPost and (heroPost.date | date("MMMM d, yyyy"))) %}
+							{% set heroExcerpt = heroCfg.excerpt or (heroPost and heroPost.data.excerpt) %}
+
+							{% if heroTitle or heroImg %}
 							<div class="item">
 							  <article class="featured">
 							    <div class="overlay"></div>
 							    <figure>
-							      <img src="{{ heroCfg.image or heroPost.data.hero }}" alt="{{ heroCfg.title or heroPost.data.title }}">
+							      {% if heroImg %}<img src="{{ heroImg | url }}" alt="{{ heroTitle | safe }}">{% endif %}
 							    </figure>
 							    <div class="details">
-							      {% if heroCfg.category or heroPost.data.tags %}
+							      {% if heroCat %}
 							        <div class="category">
-							          <a href="podcast.html">
-							            {{ heroCfg.category or (heroPost.data.tags and heroPost.data.tags[0]) }}
-							          </a>
+							          {% if heroCatUrl %}<a href="{{ heroCatUrl }}">{{ heroCat }}</a>{% else %}{{ heroCat }}{% endif %}
 							        </div>
 							      {% endif %}
-							      <h1>
-							        <a href="{{ heroCfg.url or heroPost.url }}">
-							          {{ heroCfg.title or heroPost.data.title }}
-							        </a>
-							      </h1>
-							      {% if heroPost.date %}
-							        <div class="time">{{ heroPost.date | date("MMMM d, yyyy") }}</div>
+							      {% if heroTitle %}
+							        <h1><a href="{{ heroHref | url }}">{{ heroTitle }}</a></h1>
 							      {% endif %}
+							      {% if heroDate %}<div class="time">{{ heroDate }}</div>{% endif %}
+							      {% if heroExcerpt %}<p class="excerpt">{{ heroExcerpt }}</p>{% endif %}
 							    </div>
 							  </article>
-							</div>							{% elseif collections.posts and collections.posts.length %}
-							{% set p = collections.posts[0] %}
-							<div class="item">
-								<article class="featured">
-									<div class="overlay"></div>
-									<figure>
-										{% if p.data.hero %}<img src="{{ p.data.hero | url }}" alt="{{ p.data.title }}">{% endif %}
-									</figure>
-									<div class="details">
-										<div class="category"><a href="podcast.html">{{ (p.data.tags and p.data.tags[0]) or 'Podcast' }}</a></div>
-										<h1><a href="{{ p.url | url }}">{{ p.data.title }}</a></h1>
-										<div class="time">{{ p.date | date("MMMM d, yyyy") }}</div>
-									</div>
-								</article>
 							</div>
 							{% else %}
+							{# Static fallback if no posts and no Decap data #}
 							<div class="item">
 								<article class="featured">
 									<div class="overlay"></div>
 									<figure>
-										<img src="images/featured/snooze-button-podcast-jesse-cook-dr-cathy-goldstein-dr-olivia-walch-wearable-sleep-trackers.webp" alt="Dr. Jade Wu: Hello, Sleep!">
+										<img src="images/featured/snooze-button-podcast-jesse-cook-dr-cathy-goldstein-dr-olivia-walch-wearable-sleep-trackers.webp" alt="All-Star Panel on Wearable Sleep Trackers">
 									</figure>
 									<div class="details">
 										<div class="category"><a href="podcast.html">Podcast</a></div>
@@ -392,7 +400,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 												<a href="two-rock-stars-talk-about-sleep.html">
 												<img src="images/featured/snooze-button-podcast-lawrence-gowan-styx-sleep-tour-bus.webp" loading="lazy" alt="Two Rock Stars Talk About Sleep">
 												</a>
-											</figure>
+											figure>
 											<div class="padding">
 												<div class="detail">
 													<div class="time">July 5, 2023</div>
@@ -630,7 +638,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 												<a href="{{ item.url }}">
 													{% if item.image %}<img src="{{ item.image | url }}" loading="lazy" alt="{{ item.title }}">{% endif %}
 												</a>
-											</figure>
+											figure>
 											<div class="padding">
 												<h1><a href="{{ item.url }}">{{ item.title }}</a></h1>
 											</div>
