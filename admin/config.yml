@@ -53,8 +53,8 @@ collections:
                 required: false
                 summary: "{{fields.title}}"
                 fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "URL", name: "url", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string", required: false }
+                  - { label: "URL", name: "url", widget: "string", required: false }
                   - { label: "Image", name: "image", widget: "image", required: false }
                   - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
 
@@ -108,8 +108,8 @@ collections:
             widget: "object"
             collapsed: true
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "URL", name: "url", widget: "string", required: false }
               - { label: "Image", name: "image", widget: "image", required: false }
               - { label: "Blurb", name: "blurb", widget: "text", required: false }
 
