@@ -4,7 +4,11 @@ hero:
   title:
   url:
   image:
+  category: Podcast
+  category_url: /podcast.html
+  date: June 17, 2024
   excerpt:
+
 
 # Optional curated row under the hero. If empty, nothing renders.
 top:
