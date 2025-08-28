@@ -36,7 +36,11 @@ collections:
               - { label: "Title", name: "title", widget: "string", required: false }
               - { label: "URL", name: "url", widget: "string", required: false }
               - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Category", name: "category", widget: "string", required: false, default: "Podcast" }
+              - { label: "Category URL (optional)", name: "category_url", widget: "string", required: false, hint: "e.g., /podcast.html" }
+              - { label: "Date (shown under title)", name: "date", widget: "string", required: false, hint: "e.g., June 17, 2024" }
               - { label: "Excerpt (optional)", name: "excerpt", widget: "text", required: false }
+
 
           - label: "Top (curated row below hero)"
             name: "top"
