@@ -107,6 +107,7 @@ collections:
             name: "newsletter"
             widget: "object"
             collapsed: true
+            required: false
             fields:
               - { label: "Title", name: "title", widget: "string", required: false }
               - { label: "URL", name: "url", widget: "string", required: false }
