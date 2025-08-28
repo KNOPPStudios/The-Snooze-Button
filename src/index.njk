@@ -220,10 +220,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										{% if home.hero.image %}<img src="{{ home.hero.image | url }}" alt="{{ home.hero.title | default('Featured') }}">{% endif %}
 									</figure>
 									<div class="details">
-										<div class="category"><a href="podcast.html">Podcast</a></div>
-										<h1><a href="{{ home.hero.url }}">{{ home.hero.title }}</a></h1>
-										{% if home.hero.excerpt %}<div class="time">{{ home.hero.excerpt }}</div>{% endif %}
+									  {% if home.hero and home.hero.category %}
+									    <div class="category">
+									      {% if home.hero.category_url %}
+									        <a href="{{ home.hero.category_url }}">{{ home.hero.category }}</a>
+									      {% else %}
+									        {{ home.hero.category }}
+									      {% endif %}
+									    </div>
+									  {% endif %}
+									
+									  <h1><a href="{{ (home.hero and home.hero.url) | url }}">{{ home.hero and home.hero.title }}</a></h1>
+									
+									  {% if home.hero and home.hero.date %}
+									    <div class="time">{{ home.hero.date }}</div>
+									  {% endif %}
+									
+									  {% if home.hero and home.hero.excerpt %}
+									    <p class="excerpt">{{ home.hero.excerpt }}</p>
+									  {% endif %}
 									</div>
+
 								</article>
 							</div>
 							{% elseif collections.posts and collections.posts.length %}
