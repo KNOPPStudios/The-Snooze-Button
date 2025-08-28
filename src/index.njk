@@ -2,6 +2,9 @@
 permalink: /
 layout: null
 ---
+{% set heroCfg = home.hero or {} %}
+{% set heroPost = collections.posts | first %}
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -214,36 +217,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							{# HERO — from home.yml if set; else first post; else your static hero #}
 							{% if home and home.hero and home.hero.url %}
 							<div class="item">
-								<article class="featured">
-									<div class="overlay"></div>
-									<figure>
-										{% if home.hero.image %}<img src="{{ home.hero.image | url }}" alt="{{ home.hero.title | default('Featured') }}">{% endif %}
-									</figure>
-									<div class="details">
-									  {% if home.hero and home.hero.category %}
-									    <div class="category">
-									      {% if home.hero.category_url %}
-									        <a href="{{ home.hero.category_url }}">{{ home.hero.category }}</a>
-									      {% else %}
-									        {{ home.hero.category }}
-									      {% endif %}
-									    </div>
-									  {% endif %}
-									
-									  <h1><a href="{{ (home.hero and home.hero.url) | url }}">{{ home.hero and home.hero.title }}</a></h1>
-									
-									  {% if home.hero and home.hero.date %}
-									    <div class="time">{{ home.hero.date }}</div>
-									  {% endif %}
-									
-									  {% if home.hero and home.hero.excerpt %}
-									    <p class="excerpt">{{ home.hero.excerpt }}</p>
-									  {% endif %}
-									</div>
-
-								</article>
-							</div>
-							{% elseif collections.posts and collections.posts.length %}
+							  <article class="featured">
+							    <div class="overlay"></div>
+							    <figure>
+							      <img src="{{ heroCfg.image or heroPost.data.hero }}" alt="{{ heroCfg.title or heroPost.data.title }}">
+							    </figure>
+							    <div class="details">
+							      {% if heroCfg.category or heroPost.data.tags %}
+							        <div class="category">
+							          <a href="podcast.html">
+							            {{ heroCfg.category or (heroPost.data.tags and heroPost.data.tags[0]) }}
+							          </a>
+							        </div>
+							      {% endif %}
+							      <h1>
+							        <a href="{{ heroCfg.url or heroPost.url }}">
+							          {{ heroCfg.title or heroPost.data.title }}
+							        </a>
+							      </h1>
+							      {% if heroPost.date %}
+							        <div class="time">{{ heroPost.date | date("MMMM d, yyyy") }}</div>
+							      {% endif %}
+							    </div>
+							  </article>
+							</div>							{% elseif collections.posts and collections.posts.length %}
 							{% set p = collections.posts[0] %}
 							<div class="item">
 								<article class="featured">
