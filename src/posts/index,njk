@@ -1,0 +1,11 @@
+---
+layout: layouts/base.njk
+title: All Articles
+permalink: /posts/
+---
+<h1>All Articles</h1>
+<ul>
+{% for p in collections.posts %}
+  <li><a href="{{ p.url }}">{{ p.data.title }}</a> <small>{{ p.date | date("MMM d, yyyy") }}</small></li>
+{% endfor %}
+</ul>
