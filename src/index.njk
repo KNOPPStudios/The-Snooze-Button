@@ -83,7 +83,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="container">
 					<div class="brand">
 						<a href="#">
-							<img src="images/the_snooze_button_logo_780_117.webp" width="780px" height="117px" alt="The Snooze Button logo">
+							<img src="images/the_snooze_button_logo_780_117.webp" width="780" height="117" alt="The Snooze Button logo">
 						</a>
 					</div>
 					<div class="mobile-toggle">
@@ -213,14 +213,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<div class="owl-carousel owl-theme slide" id="featured">
 
 							{# --- HERO (Decap-driven, with optional post auto-sync) --- #}
-							{% set heroCfg = (home and home.hero) ? home.hero : {} %}
-							{% set heroPost = null %}
+							{% set heroCfg = {} %}
+							{% if home and home.hero %}
+							  {% set heroCfg = home.hero %}
+							{% endif %}
+
+							{% set heroPost = false %}
 
 							{# If Hero has a URL, try to find the matching post by url or permalink #}
 							{% if heroCfg.url and collections.posts and collections.posts.length %}
 							  {% for p in collections.posts %}
-							    {% set pUrl = p.url | url %}
-							    {% set pPerm = p.data.permalink ? (p.data.permalink | url) : "" %}
+							    {% set pUrl  = p.url | url %}
+							    {% set pPerm = p.data.permalink ? (p.data.permalink | url) : '' %}
 							    {% if pUrl == (heroCfg.url | url) or pPerm == (heroCfg.url | url) %}
 							      {% set heroPost = p %}
 							    {% endif %}
@@ -400,7 +404,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 												<a href="two-rock-stars-talk-about-sleep.html">
 												<img src="images/featured/snooze-button-podcast-lawrence-gowan-styx-sleep-tour-bus.webp" loading="lazy" alt="Two Rock Stars Talk About Sleep">
 												</a>
-											figure>
+											</figure>
 											<div class="padding">
 												<div class="detail">
 													<div class="time">July 5, 2023</div>
@@ -543,6 +547,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 												<figure>
 													<a href="sleep-lab-results-part-one-dr-mark-boulos.html">
 														<img src="images/featured/snooze-button-podcast-sleep-lab-results-part-one-dr-mark-boulos.webp" loading="lazy" alt="Sleep Lab Results Part One: Dr. Mark Boulos">
+													</a>
 												</figure>
 												<div class="padding">
 													<h1><a href="sleep-lab-results-part-one-dr-mark-boulos.html">Sleep Lab Results Part One: Dr. Mark Boulos</a></h1>
@@ -590,7 +595,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								<aside>
 									<div class="aside-body">
 										<figure class="ads">
-											<img src="images/ads/en 336_280.jpeg" loading="lazy">
+											<img src="images/ads/en 336_280.jpeg" loading="lazy" alt="">
 											<figcaption>Advertisement</figcaption>
 										</figure>
 									</div>
@@ -638,7 +643,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 												<a href="{{ item.url }}">
 													{% if item.image %}<img src="{{ item.image | url }}" loading="lazy" alt="{{ item.title }}">{% endif %}
 												</a>
-											figure>
+											</figure>
 											<div class="padding">
 												<h1><a href="{{ item.url }}">{{ item.title }}</a></h1>
 											</div>
@@ -675,7 +680,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										<div class="inner">
 											<figure>
 												<a href="cry-it-out-the-conversation-mad-about-you-paul-reiser-helen-hunt.html">
-													<img src="images/featured/snooze-button-podcast-cry-it-out-the-conversation-mad-about-you-paul-reiser-helen-hunt.webp" loading="lazy" alt="Sample Article">
+													<img src="images/featured/snooze-button-podcast-cry-it-out-the-conversation-mad-about-you-paul-reiser-helen-hunt.webp" loading="lazy" alt="Paul Reiser and Helen Hunt">
 												</a>
 											</figure>
 											<div class="padding">
@@ -699,7 +704,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										<div class="inner">
 											<figure>
 												<a href="the-only-thing-your-wearable-sleep-tracker-is-good-for.html">
-													<img src="images/featured/snooze-button-podcast-the-only-thing-your-wearable-sleep-tracker-is-good-for.webp" loading="lazy" alt="The Only Thing Your Wearable Sleep Tracker Is Good For with Dr. Michael Chee">
+													<img src="images/featured/snooze-button-podcast-the-only-thing-your-wearable-sleep-tracker-is-good-for.webp" loading="lazy" alt="The Only Thing Your Wearable Sleep Tracker Is Good For">
 												</a>
 											</figure>
 											<div class="padding">
@@ -711,7 +716,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										<div class="inner">
 											<figure>
 												<a href="congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.html">
-													<img src="images/featured/snooze-button-podcast-congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.webp" loading="lazy" alt="Sample Article">
+													<img src="images/featured/snooze-button-podcast-congresswoman-stacey-plaskett-and-her-surprising-sleep-routine.webp" loading="lazy" alt="Congresswoman Stacey Plaskett">
 												</a>
 											</figure>
 											<div class="padding">
