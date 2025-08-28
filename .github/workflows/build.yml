@@ -19,14 +19,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
-        with: { node-version: 20 }
+        with:
+          node-version: 20
+
       - run: npm install
       - run: npm run build
+
+      # --- Debug: verify admin gets into the built site ---
+      - name: Show built admin contents
+        run: |
+          echo "Listing _site/admin:"
+          ls -lah _site/admin || true
+          echo "First 60 lines of _site/admin/config.yml:"
+          sed -n '1,60p' _site/admin/config.yml || true
+
       # Configure GitHub Pages (sets up base path vars for previews)
       - uses: actions/configure-pages@v5
+
       - uses: actions/upload-pages-artifact@v3
-        with: { path: _site }
+        with:
+          path: _site
 
   deploy:
     needs: build
