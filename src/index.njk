@@ -2,55 +2,119 @@
 permalink: /
 layout: null
 ---
+{# Resolve the first post for fallbacks #}
+{% set heroPost = (collections.posts and collections.posts.length) ? collections.posts[0] : null %}
 
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>The Snooze Button</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <title>The Snooze Button — Minimal Starter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {# Keep styles minimal in the reset branch to prove the loop works #}
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin:0; padding:2rem; line-height:1.5; }
+    header { margin-bottom: 2rem; }
+    .hero { display:flex; gap:1rem; align-items:flex-start; margin-bottom:2rem; }
+    .hero img { max-width: 360px; height:auto; border-radius: 8px; }
+    .hero .meta { font-size: .9rem; opacity:.7; margin:.25rem 0 .75rem }
+    h1, h2 { margin:.25rem 0 }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+    .card { border:1px solid #ddd; border-radius: 10px; padding:1rem; }
+    .card img { width:100%; height:auto; border-radius: 8px; }
+    .muted { opacity:.7; font-size:.9rem }
+    .byline { font-size:.9rem; margin:.25rem 0 .5rem; }
+    .section-title { margin: 2rem 0 1rem; font-size: 1.25rem; }
+    a { color: #0b5bd3; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
 </head>
-<body class="skin-orange">
-  <header><h1>The Snooze Button</h1></header>
+<body>
 
-  <section id="featured">
-    {% set hero = home and home.hero %}
-    {% set firstPost = (collections.posts and collections.posts.length) ? collections.posts[0] : null %}
+<header>
+  <h1>The Snooze Button</h1>
+  <div class="muted">Minimal Eleventy + Decap reset</div>
+</header>
 
-    {% if hero and hero.url %}
-      <article>
-        {% if hero.image %}<img src="{{ hero.image | url }}" alt="{{ hero.title }}">{% endif %}
-        <div class="category">{{ hero.category or 'Podcast' }}</div>
-        <h2><a href="{{ hero.url }}">{{ hero.title }}</a></h2>
-        {% if hero.date %}<div class="time">{{ hero.date }}</div>{% endif %}
+<section class="hero">
+  {# HERO — prefer curated home.hero (from src/_data/home.yml), else first post, else static #}
+
+  {% set haveCuratedHero = (home and home.hero and home.hero.url) %}
+  {% if haveCuratedHero %}
+    {% set heroTitle = home.hero.title %}
+    {% if not heroTitle %}{% set heroTitle = "Featured" %}{% endif %}
+    {% set heroUrl = home.hero.url %}
+    {% set heroImg = home.hero.image %}
+    {% set heroCat = home.hero.category %}
+    <div>
+      {% if heroImg %}<img src="{{ heroImg | url }}" alt="{{ heroTitle }}">{% endif %}
+    </div>
+    <div>
+      {% if heroCat %}<div class="meta">{{ heroCat }}</div>{% endif %}
+      <h2><a href="{{ heroUrl }}">{{ heroTitle }}</a></h2>
+      {% if home.hero.excerpt %}<p>{{ home.hero.excerpt }}</p>{% endif %}
+    </div>
+
+  {% elseif heroPost %}
+    <div>
+      {% if heroPost.data.hero %}<img src="{{ heroPost.data.hero | url }}" alt="{{ heroPost.data.title }}">{% endif %}
+    </div>
+    <div>
+      {% if heroPost.data.tags and heroPost.data.tags.length %}
+        <div class="meta">{{ heroPost.data.tags[0] }}</div>
+      {% endif %}
+      <h2><a href="{{ heroPost.url | url }}">{{ heroPost.data.title }}</a></h2>
+      {% if heroPost.date %}<div class="byline">{{ heroPost.date | date("MMMM d, yyyy") }}</div>{% endif %}
+      {% if heroPost.data.excerpt %}<p>{{ heroPost.data.excerpt }}</p>{% endif %}
+    </div>
+
+  {% else %}
+    <div>
+      <img src="/images/featured/snooze-button-podcast-jesse-cook-dr-cathy-goldstein-dr-olivia-walch-wearable-sleep-trackers.webp" alt="All-Star Panel on Wearable Sleep Trackers">
+    </div>
+    <div>
+      <div class="meta">Podcast</div>
+      <h2><a href="/all-star-panel-wearable-sleep-trackers.html">All-Star Panel on Wearable Sleep Trackers</a></h2>
+      <div class="byline">June 17, 2024</div>
+    </div>
+  {% endif %}
+</section>
+
+{% if home.top and home.top.items and home.top.items.length %}
+  <h3 class="section-title">Featured</h3>
+  <section class="grid">
+    {% for item in home.top.items %}
+      <article class="card">
+        {% if item.image %}<img src="{{ item.image | url }}" alt="{{ item.title }}">{% endif %}
+        <h4><a href="{{ item.url }}">{{ item.title }}</a></h4>
+        {% if item.excerpt %}<p>{{ item.excerpt }}</p>{% endif %}
       </article>
-    {% elseif firstPost %}
-      <article>
-        {% if firstPost.data.hero %}<img src="{{ firstPost.data.hero | url }}" alt="{{ firstPost.data.title }}">{% endif %}
-        <div class="category">{{ (firstPost.data.tags and firstPost.data.tags[0]) or 'Podcast' }}</div>
-        <h2><a href="{{ firstPost.url | url }}">{{ firstPost.data.title }}</a></h2>
-        <div class="time">{{ firstPost.date | date("MMMM d, yyyy") }}</div>
-      </article>
-    {% else %}
-      <p>Add a hero in Admin → Homepage or create your first Post.</p>
-    {% endif %}
+    {% endfor %}
   </section>
+{% endif %}
 
-  <section id="latest">
-    <h3>Latest Episodes</h3>
-    {% if collections.posts and collections.posts.length %}
-      {% for p in collections.posts | slice(0, home.latest_count or 4) %}
-      <article>
-        <h4><a href="{{ p.url | url }}">{{ p.data.title }}</a></h4>
-        {% if p.data.hero %}<img src="{{ p.data.hero | url }}" alt="{{ p.data.title }}">{% endif %}
-        <div class="time">{{ p.date | date("MMMM d, yyyy") }}</div>
-      </article>
-      {% endfor %}
-    {% else %}
-      <p>No posts yet.</p>
-    {% endif %}
+<h3 class="section-title">Latest</h3>
+{% set count = home.latest_count %}
+{% if not count %}{% set count = 4 %}{% endif %}
+{% if collections.posts and collections.posts.length %}
+  <section class="grid">
+    {% set shown = 0 %}
+    {% for p in collections.posts %}
+      {% if shown < count %}
+        <article class="card">
+          {% if p.data.hero %}<img src="{{ p.data.hero | url }}" alt="{{ p.data.title }}">{% endif %}
+          <h4><a href="{{ p.url | url }}">{{ p.data.title }}</a></h4>
+          <div class="muted">{{ p.date | date("MMMM d, yyyy") }}</div>
+          {% if p.data.excerpt %}<p>{{ p.data.excerpt }}</p>{% endif %}
+        </article>
+        {% set shown = shown + 1 %}
+      {% endif %}
+    {% endfor %}
   </section>
+{% else %}
+  <p class="muted">No posts yet — add one in <code>/admin</code> or create a file in <code>src/posts/</code>.</p>
+{% endif %}
 
-  <p><a href="/admin/">Go to Admin</a></p>
 </body>
 </html>
