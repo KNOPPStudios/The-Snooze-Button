@@ -1,93 +1,31 @@
 const pluginRSS = require("@11ty/eleventy-plugin-rss");
 const markdownIt = require("markdown-it");
 const { DateTime } = require("luxon");
-const fs = require("fs");
 
 module.exports = function(eleventyConfig) {
-  // Markdown: allow raw HTML for embeds (Captivate etc.)
+  // Markdown with raw HTML allowed
   eleventyConfig.setLibrary("md", markdownIt({ html: true, linkify: true }));
 
-  // Ensure a .nojekyll file exists so GitHub Pages serves everything as-is
-  eleventyConfig.on("eleventy.before", () => {
-    try { if (!fs.existsSync(".nojekyll")) fs.writeFileSync(".nojekyll", ""); } catch (_) {}
-  });
+  // Passthroughs (this is the key so /admin/config.yml is NOT 404)
+  eleventyConfig.addPassthroughCopy("admin");
+  eleventyConfig.addPassthroughCopy({ "images": "images", "css": "css", "scripts": "scripts" });
 
-  // Passthrough static assets from the repo root (these are the folders your HTML references)
-  eleventyConfig.addPassthroughCopy({
-    "css": "css",
-    "js": "js",
-    "images": "images",
-    "scripts": "scripts",
-    "fonts": "fonts",           // keep if you add one later
-    "admin": "admin",           // Decap CMS
-    "favicon.ico": "favicon.ico",
-    ".nojekyll": ".nojekyll"
-  });
-
-  // If you actually use src/assets, keep this too (safe to leave even if empty)
-  eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
-
-  // Collections
+  // Posts collection
   eleventyConfig.addCollection("posts", (collection) =>
-    collection.getFilteredByGlob("src/posts/**/*.md").sort((a, b) => b.date - a.date)
+    collection.getFilteredByGlob("src/posts/**/*.md").sort((a,b) => b.date - a.date)
   );
 
-  // Related posts (by tag overlap, then newest)
-  eleventyConfig.addFilter("related", (post, allPosts, max = 3) => {
-    const tags = new Set((post.data.tags || []).filter(t => !["post","posts"].includes(t)));
-    const scored = allPosts.filter(p => p.url !== post.url).map(p => {
-      const ptags = new Set(p.data.tags || []);
-      let score = 0;
-      tags.forEach(t => { if (ptags.has(t)) score += 1; });
-      return { p, score, date: p.date };
-    }).sort((a,b) => (b.score - a.score) || (b.date - a.date));
-    const top = scored.filter(x => x.score > 0).slice(0, max).map(x => x.p);
-    for (const p of allPosts) {
-      if (top.length >= max) break;
-      if (p.url !== post.url && !top.find(t => t.url === p.url)) top.push(p);
-    }
-    return top.slice(0, max);
-  });
-
-  // Keep legacy root-level .html pages as .html so existing links keep working
-eleventyConfig.addGlobalData("eleventyComputed", {
-  permalink: (data) => {
-    // Don’t touch pages that already set a permalink (e.g., src/index.njk)
-    if (data.permalink) return data.permalink;
-
-    const p = data.page || {};
-    const input = p.inputPath || "";
-    const isRootHtml =
-      input.startsWith("./") &&
-      !input.startsWith("./src/") &&
-      input.endsWith(".html") &&
-      p.fileSlug !== "index"; // don't fight the homepage
-
-    if (isRootHtml) {
-      return `/${p.fileSlug}.html`;
-    }
-    return data.permalink;
-  }
-});
-
-
-  // Nunjucks date filter: {{ someDate | date("MMMM d, yyyy") }}
+  // Date filter
   eleventyConfig.addNunjucksFilter("date", (value, format = "MMMM d, yyyy") => {
     const dt = value instanceof Date ? DateTime.fromJSDate(value) : DateTime.fromJSDate(new Date(value));
-    if (!dt.isValid) return "";
-    return dt.toFormat(format);
-  });
-
-  // Shortcode for current year: {% year %}
-  eleventyConfig.addShortcode("year", () => String(new Date().getFullYear()));
+    return dt.isValid ? dt.toFormat(format) : "";
+    });
 
   // Plugins
   eleventyConfig.addPlugin(pluginRSS);
 
-  // Directories
   return {
     dir: { input: ".", includes: "src/_includes", data: "src/_data", output: "_site" },
-    templateFormats: ["njk", "md", "html"],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk"
   };
