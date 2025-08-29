@@ -1,0 +1,59 @@
+backend:
+  name: github
+  repo: KNOPPStudios/The-Snooze-Button
+  branch: main
+  base_url: https://decap.thesnoozebutton.com
+  auth_endpoint: /auth
+
+site_url: https://thesnoozebutton.com
+display_url: https://thesnoozebutton.com
+logo_url: https://thesnoozebutton.com/images/the_snooze_button_logo_780_117.webp
+locale: en
+
+publish_mode: editorial_workflow
+editor:
+  preview: false
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "home"
+    label: "Homepage"
+    files:
+      - label: "Homepage Settings"
+        name: "home"
+        file: "src/_data/home.yml"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Category", name: "category", widget: "string", required: false, default: "Podcast" }
+              - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false, required: false }
+          - label: "Latest count"
+            name: "latest_count"
+            widget: "number"
+            value_type: "int"
+            min: 1
+            max: 24
+            required: false
+
+  - name: "posts"
+    label: "Posts"
+    folder: "src/posts"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/index"
+    extension: "md"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ" }
+      - { label: "Tags", name: "tags", widget: "list", required: false, default: ["podcast"] }
+      - { label: "Hero Image", name: "hero", widget: "image", required: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Permalink (optional)", name: "permalink", widget: "string", required: false }
