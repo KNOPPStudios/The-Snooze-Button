@@ -2,8 +2,6 @@
 permalink: /
 layout: null
 ---
-{# Resolve the first post for fallbacks #}
-{% set heroPost = (collections.posts and collections.posts.length) ? collections.posts[0] : null %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +10,6 @@ layout: null
   <title>The Snooze Button — Minimal Starter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {# Keep styles minimal in the reset branch to prove the loop works #}
   <style>
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin:0; padding:2rem; line-height:1.5; }
     header { margin-bottom: 2rem; }
@@ -39,14 +36,13 @@ layout: null
 
 <section class="hero">
   {# HERO — prefer curated home.hero (from src/_data/home.yml), else first post, else static #}
-
-  {% set haveCuratedHero = (home and home.hero and home.hero.url) %}
-  {% if haveCuratedHero %}
+  {% if home and home.hero and home.hero.url %}
     {% set heroTitle = home.hero.title %}
     {% if not heroTitle %}{% set heroTitle = "Featured" %}{% endif %}
     {% set heroUrl = home.hero.url %}
     {% set heroImg = home.hero.image %}
     {% set heroCat = home.hero.category %}
+
     <div>
       {% if heroImg %}<img src="{{ heroImg | url }}" alt="{{ heroTitle }}">{% endif %}
     </div>
@@ -56,17 +52,18 @@ layout: null
       {% if home.hero.excerpt %}<p>{{ home.hero.excerpt }}</p>{% endif %}
     </div>
 
-  {% elseif heroPost %}
+  {% elseif collections.posts and collections.posts.length %}
+    {% set p = collections.posts[0] %}
     <div>
-      {% if heroPost.data.hero %}<img src="{{ heroPost.data.hero | url }}" alt="{{ heroPost.data.title }}">{% endif %}
+      {% if p.data.hero %}<img src="{{ p.data.hero | url }}" alt="{{ p.data.title }}">{% endif %}
     </div>
     <div>
-      {% if heroPost.data.tags and heroPost.data.tags.length %}
-        <div class="meta">{{ heroPost.data.tags[0] }}</div>
+      {% if p.data.tags and p.data.tags.length %}
+        <div class="meta">{{ p.data.tags[0] }}</div>
       {% endif %}
-      <h2><a href="{{ heroPost.url | url }}">{{ heroPost.data.title }}</a></h2>
-      {% if heroPost.date %}<div class="byline">{{ heroPost.date | date("MMMM d, yyyy") }}</div>{% endif %}
-      {% if heroPost.data.excerpt %}<p>{{ heroPost.data.excerpt }}</p>{% endif %}
+      <h2><a href="{{ p.url | url }}">{{ p.data.title }}</a></h2>
+      {% if p.date %}<div class="byline">{{ p.date | date("MMMM d, yyyy") }}</div>{% endif %}
+      {% if p.data.excerpt %}<p>{{ p.data.excerpt }}</p>{% endif %}
     </div>
 
   {% else %}
@@ -81,7 +78,7 @@ layout: null
   {% endif %}
 </section>
 
-{% if home.top and home.top.items and home.top.items.length %}
+{% if home and home.top and home.top.items and home.top.items.length %}
   <h3 class="section-title">Featured</h3>
   <section class="grid">
     {% for item in home.top.items %}
@@ -95,8 +92,7 @@ layout: null
 {% endif %}
 
 <h3 class="section-title">Latest</h3>
-{% set count = home.latest_count %}
-{% if not count %}{% set count = 4 %}{% endif %}
+{% if home and home.latest_count %}{% set count = home.latest_count %}{% else %}{% set count = 4 %}{% endif %}
 {% if collections.posts and collections.posts.length %}
   <section class="grid">
     {% set shown = 0 %}
