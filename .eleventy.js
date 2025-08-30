@@ -3,25 +3,25 @@ const markdownIt = require("markdown-it");
 const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
-  // Markdown with raw HTML allowed
+  // Markdown with raw HTML allowed (for embeds)
   eleventyConfig.setLibrary("md", markdownIt({ html: true, linkify: true }));
 
-  // Passthroughs (this is the key so /admin/config.yml is NOT 404)
+  // Passthroughs
   eleventyConfig.addPassthroughCopy("admin");
-  eleventyConfig.addPassthroughCopy({ "images": "images", "css": "css", "scripts": "scripts" });
+  eleventyConfig.addPassthroughCopy({ "css": "css", "js": "js", "images": "images", "scripts": "scripts" });
 
-  // Posts collection
+  // Collections
   eleventyConfig.addCollection("posts", (collection) =>
     collection.getFilteredByGlob("src/posts/**/*.md").sort((a,b) => b.date - a.date)
   );
 
-  // Date filter
+  // Nunjucks date filter
   eleventyConfig.addNunjucksFilter("date", (value, format = "MMMM d, yyyy") => {
     const dt = value instanceof Date ? DateTime.fromJSDate(value) : DateTime.fromJSDate(new Date(value));
-    return dt.isValid ? dt.toFormat(format) : "";
-    });
+    if (!dt.isValid) return "";
+    return dt.toFormat(format);
+  });
 
-  // Plugins
   eleventyConfig.addPlugin(pluginRSS);
 
   return {
